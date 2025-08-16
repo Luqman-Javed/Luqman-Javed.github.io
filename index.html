@@ -10,16 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#0f1a2b;
-      --ink:#e7ecf6;
-      --muted:#a9b6cf;
-      --accent:#5aa3ff;
-      --accent-ink:#0b1220;
-      --line:#1d2a41;
+      --bg:#0b1220; --card:#0f1a2b; --ink:#e7ecf6; --muted:#a9b6cf;
+      --accent:#5aa3ff; --accent-ink:#0b1220; --line:#1d2a41;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;line-height:1.6}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1100px;margin:0 auto;padding:28px 20px 64px}
@@ -52,10 +47,18 @@
     .links-list li{margin:6px 0}
     .chiprow{display:flex;flex-wrap:wrap;gap:8px}
     .muted{color:var(--muted)}
-    /* Responsive */
+    .cs-grid{display:grid;gap:16px}
+    .cs-grid.cols-2{grid-template-columns:1fr 1fr}
+    .cs{background:#0c1730;border:1px solid var(--line);border-radius:12px;padding:16px}
+    .cs h3{margin:0 0 8px 0}
+    .cs small{color:var(--muted)}
+    .cs .tag{display:inline-block;margin-top:8px;margin-right:6px;padding:4px 8px;border-radius:8px;border:1px solid var(--line);color:var(--muted);font-size:12px}
+    .cs dl{margin:10px 0}
+    .cs dt{font-weight:700;margin-top:8px}
+    .cs dd{margin:2px 0 8px 0}
     @media (max-width:900px){
       header.hero{grid-template-columns:1fr}
-      .grid.cols-2{grid-template-columns:1fr}
+      .grid.cols-2,.cs-grid.cols-2{grid-template-columns:1fr}
       .grid.cols-3{grid-template-columns:1fr 1fr}
     }
     @media (max-width:560px){
@@ -72,7 +75,8 @@
         <p class="role">Content Strategist • SEO & CRO Consultant • Creative Strategist</p>
         <p class="meta">Porto, Portugal (UTC+0) • IELTS Band 9 English</p>
         <div class="cta" role="group" aria-label="Primary actions">
-          <a class="btn primary" href="Luqman_Lucky_Javed_CV.pdf" download>Download CV (PDF)</a>
+          <!-- Updated file name here -->
+          <a class="btn primary" href="CV_1_Luqman_Lucky_Javed.pdf" download>Download CV (PDF)</a>
           <a class="btn" href="mailto:admin@luqmanjaved.com">Email</a>
           <a class="btn" href="https://www.linkedin.com/in/luqman-lucky-javed-236696358/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="https://luqman-javed.github.io/" target="_blank" rel="noopener">Portfolio</a>
@@ -87,14 +91,9 @@
         <h2 class="section" style="margin-top:0">Professional Summary</h2>
         <p>Content and web marketing strategist with 4+ years driving growth for DTC and B2B brands. I plan SEO roadmaps, optimize funnels for conversion, and write UX-focused messaging that moves users from intent to action. Comfortable with data-driven iteration using GA4 and Hotjar. Licensed veterinarian and certified nutritionist with strong health communication skills that transfer to complex industries.</p>
         <div class="chiprow" aria-label="Core capabilities">
-          <span class="pill">Content strategy</span>
-          <span class="pill">SEO roadmapping</span>
-          <span class="pill">CRO</span>
-          <span class="pill">UX copy</span>
-          <span class="pill">Funnel optimization</span>
-          <span class="pill">Analytics</span>
-          <span class="pill">Editorial ops</span>
-          <span class="pill">Stakeholder comms</span>
+          <span class="pill">Content strategy</span><span class="pill">SEO roadmapping</span><span class="pill">CRO</span>
+          <span class="pill">UX copy</span><span class="pill">Funnel optimization</span><span class="pill">Analytics</span>
+          <span class="pill">Editorial ops</span><span class="pill">Stakeholder comms</span>
         </div>
       </div>
     </header>
@@ -136,36 +135,71 @@
         </div>
       </section>
 
+      <!-- New Case Studies section -->
+      <section class="card" aria-labelledby="case-studies">
+        <h2 id="case-studies" class="section">Case Studies</h2>
+
+        <div class="cs-grid cols-2">
+          <article class="cs" aria-label="SEO content overhaul">
+            <h3>SEO Content Overhaul for Multi-Brand Portfolio</h3>
+            <small class="muted">Role: Content Strategist and Editor</small>
+            <dl>
+              <dt>Goal</dt>
+              <dd>Lift organic visibility and session quality across three content-heavy brands.</dd>
+              <dt>Actions</dt>
+              <dd>Audited content, mapped search intent, rebuilt editorial calendar, and refreshed on-page SEO and internal linking. Introduced Notion-based workflow and GA4 dashboards for prioritization.</dd>
+              <dt>Results</dt>
+              <dd>Double-digit growth in organic traffic and improved CTR on high-intent pages. Faster production cadence with fewer delivery bottlenecks.</dd>
+            </dl>
+            <span class="tag">SEO</span><span class="tag">Content strategy</span><span class="tag">Editorial ops</span>
+          </article>
+
+          <article class="cs" aria-label="Landing page CRO">
+            <h3>Landing Page CRO for High-Intent Categories</h3>
+            <small class="muted">Role: UX Copywriter and CRO Partner</small>
+            <dl>
+              <dt>Goal</dt>
+              <dd>Increase click-through and conversion on key category and product pages.</dd>
+              <dt>Actions</dt>
+              <dd>Analyzed Hotjar recordings and GA4 funnels, clarified value props, tightened headlines and CTAs, aligned copy to search intent.</dd>
+              <dt>Results</dt>
+              <dd>Meaningful uplift in CTR and improved funnel progression. Reduced bounce and clearer user paths to conversion.</dd>
+            </dl>
+            <span class="tag">CRO</span><span class="tag">UX copy</span><span class="tag">Analytics</span>
+          </article>
+        </div>
+
+        <article class="cs" style="margin-top:16px" aria-label="Thought leadership program">
+          <h3>Thought Leadership Program for Niche Health Topics</h3>
+          <small class="muted">Role: Lead Editor and SME Coordinator</small>
+          <dl>
+            <dt>Goal</dt>
+            <dd>Build topical authority and trust in complex wellness topics.</dd>
+            <dt>Actions</dt>
+            <dd>Planned pillar and cluster content, coordinated SME reviews, standardized sourcing and compliance guidelines, and shipped long-form guides with clear UX structure.</dd>
+            <dt>Results</dt>
+            <dd>Greater keyword coverage across priority clusters and higher engagement time on long-form articles.</dd>
+          </dl>
+          <span class="tag">Topical authority</span><span class="tag">Long-form</span><span class="tag">SME workflow</span>
+        </article>
+      </section>
+
       <section class="grid cols-2" aria-label="Skills and tools">
         <div class="card">
           <h2 class="section" style="margin-top:0">Core Skills</h2>
           <div class="chiprow">
-            <span class="pill">Content strategy</span>
-            <span class="pill">SEO</span>
-            <span class="pill">CRO</span>
-            <span class="pill">UX writing</span>
-            <span class="pill">Organic traffic growth</span>
-            <span class="pill">Lead generation</span>
-            <span class="pill">Funnel analysis</span>
-            <span class="pill">Editorial management</span>
-            <span class="pill">Remote collaboration</span>
+            <span class="pill">Content strategy</span><span class="pill">SEO</span><span class="pill">CRO</span>
+            <span class="pill">UX writing</span><span class="pill">Organic traffic growth</span><span class="pill">Lead generation</span>
+            <span class="pill">Funnel analysis</span><span class="pill">Editorial management</span><span class="pill">Remote collaboration</span>
           </div>
         </div>
         <div class="card">
           <h2 class="section" style="margin-top:0">Tools</h2>
           <div class="chiprow">
-            <span class="pill">WordPress</span>
-            <span class="pill">Shopify</span>
-            <span class="pill">GA4</span>
-            <span class="pill">Hotjar</span>
-            <span class="pill">Ahrefs</span>
-            <span class="pill">Surfer</span>
-            <span class="pill">Yoast</span>
-            <span class="pill">Notion</span>
-            <span class="pill">Trello</span>
-            <span class="pill">Slack</span>
-            <span class="pill">Loom</span>
-            <span class="pill">Canva</span>
+            <span class="pill">WordPress</span><span class="pill">Shopify</span><span class="pill">GA4</span>
+            <span class="pill">Hotjar</span><span class="pill">Ahrefs</span><span class="pill">Surfer</span>
+            <span class="pill">Yoast</span><span class="pill">Notion</span><span class="pill">Trello</span>
+            <span class="pill">Slack</span><span class="pill">Loom</span><span class="pill">Canva</span>
           </div>
         </div>
       </section>
@@ -175,7 +209,7 @@
         <ul class="links-list">
           <li><a href="https://www.discovermagazine.com/planet-earth/certain-animals-tolerate-spicy-foods-better-than-others" target="_blank" rel="noopener">Featured Expert — Discover Magazine: Why Some Animals Tolerate Spicy Foods</a></li>
           <li><a href="https://www.catster.com/ask-the-vet/homemade-low-carb-chicken-cat-food-recipe/" target="_blank" rel="noopener">Homemade Low-Carb Chicken Cat Food Recipe — Catster</a></li>
-          <li><a href="https://articles.hepper.com/do-cats-have-periods/" target="_blank" rel="noopener">Do Cats Have Periods? Vet Guide — Hepper</a></li>
+          <li><a href="https://articles.hepper.com/do-cats-have-periods/" target="_blank" rel="noopener">Do Cats Have Periods — Hepper</a></li>
           <li><a href="https://pangovet.com/pet-nutrition/birds/can-parrots-eat-coconut/" target="_blank" rel="noopener">Can Parrots Eat Coconut — PangoVet</a></li>
           <li><a href="https://www.dogster.com/ask-the-vet/flehmen-response-in-dogs-vet-answer" target="_blank" rel="noopener">What Is the Flehmen Response in Dogs — Dogster</a></li>
           <li><a href="https://www.catster.com/lifestyle/best-cat-bowls/" target="_blank" rel="noopener">10 Best Cat Bowls in 2025 — Catster</a></li>
@@ -224,17 +258,9 @@
     "email": "admin@luqmanjaved.com",
     "telephone": "+351962092461",
     "url": "https://luqman-javed.github.io/",
-    "sameAs": [
-      "https://www.linkedin.com/in/luqman-lucky-javed-236696358/"
-    ],
-    "knowsAbout": [
-      "Content strategy", "SEO", "CRO", "UX copy", "Analytics", "Editorial workflows", "Funnel optimization"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Porto",
-      "addressCountry": "Portugal"
-    }
+    "sameAs": ["https://www.linkedin.com/in/luqman-lucky-javed-236696358/"],
+    "knowsAbout": ["Content strategy","SEO","CRO","UX copy","Analytics","Editorial workflows","Funnel optimization"],
+    "address": {"@type":"PostalAddress","addressLocality":"Porto","addressCountry":"Portugal"}
   }
   </script>
 </body>
