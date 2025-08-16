@@ -1,180 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luqman (Lucky) Javed – Content Strategist & SEO Specialist</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luqman (Lucky) Javed — Content Strategist, SEO & CRO</title>
+  <meta name="description" content="Content Strategist and SEO/CRO consultant driving organic growth, conversions, and UX-focused messaging for DTC and B2B brands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2b;
+      --ink:#e7ecf6;
+      --muted:#a9b6cf;
+      --accent:#5aa3ff;
+      --accent-ink:#0b1220;
+      --line:#1d2a41;
     }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 20px 64px}
+    header.hero{
+      display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;
+      padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#0e1730 0%, #0b1220 60%)
     }
-    header img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-right: 1rem;
+    .title h1{margin:0 0 6px 0;font-size:32px;letter-spacing:.2px}
+    .title p.role{margin:0;color:var(--muted);font-weight:500}
+    .meta{margin-top:14px;color:var(--muted);font-size:14px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--ink);font-weight:600
     }
-    header div {
-      max-width: 60%;
+    .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+    .btn:hover{filter:brightness(1.08)}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+    h2.section{margin:28px 0 12px 0;font-size:20px;letter-spacing:.3px}
+    .grid{display:grid;gap:16px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:10px;background:#0c1730;border:1px solid var(--line);color:var(--muted);font-size:13px;margin:4px 6px 0 0}
+    .bullets{margin:0;padding-left:18px}
+    .bullets li{margin:6px 0}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .metric{background:#0c1730;border:1px solid var(--line);border-radius:12px;padding:14px}
+    .metric b{display:block;font-size:18px}
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px}
+    .links-list{padding-left:18px;margin:8px 0}
+    .links-list li{margin:6px 0}
+    .chiprow{display:flex;flex-wrap:wrap;gap:8px}
+    .muted{color:var(--muted)}
+    /* Responsive */
+    @media (max-width:900px){
+      header.hero{grid-template-columns:1fr}
+      .grid.cols-2{grid-template-columns:1fr}
+      .grid.cols-3{grid-template-columns:1fr 1fr}
     }
-    .contact-info {
-      text-align: right;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      border-bottom: 2px solid #003366;
-      padding-bottom: 0.3rem;
-      color: #003366;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: '•';
-      color: #003366;
-      margin-right: 0.5rem;
-    }
-    a {
-      color: #003366;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #003366;
-      color: white;
-      margin-top: 2rem;
+    @media (max-width:560px){
+      .metrics{grid-template-columns:1fr}
+      .title h1{font-size:26px}
     }
   </style>
 </head>
 <body>
-  <header>
-    <div style="display: flex; align-items: center;">
-      <div>
-        <h1 style="margin: 0;">Luqman Khalid Javed</h1>
-        <p style="margin: 0;">Content Strategist | SEO Specialist | Digital Storyteller | Veterinarian</p>
+  <div class="wrap">
+    <header class="hero" aria-label="Intro">
+      <div class="title">
+        <h1>Luqman (Lucky) Javed</h1>
+        <p class="role">Content Strategist • SEO & CRO Consultant • Creative Strategist</p>
+        <p class="meta">Porto, Portugal (UTC+0) • IELTS Band 9 English</p>
+        <div class="cta" role="group" aria-label="Primary actions">
+          <a class="btn primary" href="Luqman_Lucky_Javed_CV.pdf" download>Download CV (PDF)</a>
+          <a class="btn" href="mailto:admin@luqmanjaved.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/luqman-lucky-javed-236696358/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://luqman-javed.github.io/" target="_blank" rel="noopener">Portfolio</a>
+        </div>
+        <div class="metrics" aria-label="Impact metrics">
+          <div class="metric"><b>Organic growth</b><span class="muted">Double-digit increase across multi-brand portfolios</span></div>
+          <div class="metric"><b>Conversion impact</b><span class="muted">Improved CTR and funnel performance on high-intent pages</span></div>
+          <div class="metric"><b>Ops efficiency</b><span class="muted">Faster delivery with Notion-based editorial workflows</span></div>
+        </div>
       </div>
-    </div>
-    <div class="contact-info">
-      <p>admin@luqmanjaved.com</p>
-      <p>+351 962 092 461</p>
-      <p>Porto, Portugal (UTC+0)</p>
-      <p><a href="https://www.linkedin.com/in/luqman-khalid-javed-236696358/" target="_blank" style="color: white; text-decoration: underline;">LinkedIn Profile</a></p>
-    </div>
-  </header>
+      <div class="card">
+        <h2 class="section" style="margin-top:0">Professional Summary</h2>
+        <p>Content and web marketing strategist with 4+ years driving growth for DTC and B2B brands. I plan SEO roadmaps, optimize funnels for conversion, and write UX-focused messaging that moves users from intent to action. Comfortable with data-driven iteration using GA4 and Hotjar. Licensed veterinarian and certified nutritionist with strong health communication skills that transfer to complex industries.</p>
+        <div class="chiprow" aria-label="Core capabilities">
+          <span class="pill">Content strategy</span>
+          <span class="pill">SEO roadmapping</span>
+          <span class="pill">CRO</span>
+          <span class="pill">UX copy</span>
+          <span class="pill">Funnel optimization</span>
+          <span class="pill">Analytics</span>
+          <span class="pill">Editorial ops</span>
+          <span class="pill">Stakeholder comms</span>
+        </div>
+      </div>
+    </header>
 
-  <div class="container">
-    <section>
-      <h2>Professional Summary</h2>
-      <p>Versatile content strategist and SEO specialist with a strong foundation in research, digital publishing, and multimedia storytelling. Adept at creating search-optimized content that balances clarity and engagement across tech, education, and wellness industries. Skilled in editorial strategy, content lifecycle management, and remote team collaboration. Fluent in English (IELTS Band 9) and committed to impactful, user-focused communication.</p>
-    </section>
+    <main aria-label="Main content">
+      <section class="card" aria-labelledby="experience">
+        <h2 id="experience" class="section">Experience</h2>
 
-    <section>
-      <h2>Core Skills</h2>
-      <li>Content Strategy</li>
-      <li>Copywriting & Blog Development</li>
-      <li>Content Lifecycle Management</li>
-      <li>Editorial Calendars & Team Oversight</li>
-      <li>Video & Ad Scriptwriting</li>
-      <li>Digital Platforms: WordPress, Yoast SEO, Ahrefs, Canva, Figma</li>
-      <li>Tools: Notion, Trello, Slack, Google Workspace</li>
-      <li>Veterinarian | DVM Expertise</li>
-      <li>Certified Feline & Canine Nutritionist</li>
-      <li>Scientific Communication</li>
-      <li>Audience Engagement</li>
-    </section>
+        <div class="grid cols-2">
+          <div>
+            <h3 style="margin:0 0 6px 0">Freelance Content Strategist and SEO Consultant</h3>
+            <p class="muted" style="margin:0 0 10px 0">Jan 2025 to present • Remote</p>
+            <ul class="bullets">
+              <li>Planned and executed SEO and CRO strategies for SaaS and DTC brands that lifted organic visibility and lead capture.</li>
+              <li>Shipped audience-centric blogs, landing pages, and product copy aligned to brand positioning and search intent.</li>
+              <li>Used GA4 and Hotjar to improve CTA hierarchy and reduce bounce on high-intent pages.</li>
+            </ul>
+          </div>
 
-    <section>
-  <h2>Experience</h2>
-  <p><strong>Freelance Content Strategist & Writer (2025–Present)</strong><br>
-  • Develop SEO-optimized blogs, product descriptions, and website copy across multiple industries<br>
-  • Collaborate with clients to create tailored content strategies that boost audience engagement and conversions<br>
-  • Manage editorial calendars and coordinate with remote teams for content delivery<br>
-  • Conduct keyword research and apply SEO best practices for enhanced search visibility<br>
-  • Provide proofreading and editorial support to ensure high-quality, polished deliverables</p>
+          <div>
+            <h3 style="margin:0 0 6px 0">Pangolia — Content Manager and In-House Strategist</h3>
+            <p class="muted" style="margin:0 0 10px 0">Jan 2022 to Dec 2024 • Remote</p>
+            <ul class="bullets">
+              <li>Drove double-digit organic growth across Dogster, Catster, and Hepper with SEO-led editorial plans.</li>
+              <li>Improved CTR and conversions on high-intent landing pages with clear UX copy and tested messaging.</li>
+              <li>Built a Notion-based editorial workflow that reduced delivery bottlenecks and improved cross-team alignment.</li>
+              <li>Acted as the primary strategist during cross-brand initiatives, coordinating with editors, designers, and freelancers.</li>
+            </ul>
+          </div>
+        </div>
 
-  <p><strong>Pangolia – Content Manager & Scientific Writer (Remote, 2023–2024)</strong><br>
-  • Produced SEO-driven articles and video scripts for Catster, Dogster, and Hepper<br>
-  • Managed editorial calendars, contributor operations, and internal tracking systems<br>
-  • Initiated Reddit outreach strategy that directly contributed to lead generation<br>
-  • Featured by Discover.com for subject-matter expertise in pet health content</p>
+        <div style="margin-top:12px">
+          <h3 style="margin:0 0 6px 0">Universiti Putra Malaysia — Research Associate</h3>
+          <p class="muted" style="margin:0 0 10px 0">Sep 2020 to Jun 2022 • Selangor, Malaysia</p>
+          <ul class="bullets">
+            <li>Translated complex research into accessible campaigns and UX-driven messaging for public health programs.</li>
+            <li>Supported multi-disciplinary teams with clear, accurate content and data storytelling.</li>
+          </ul>
+        </div>
+      </section>
 
-  <p><strong>Universiti Putra Malaysia – Research Associate (Hybrid/Remote, 2020–2023)</strong><br>
-  • Conducted academic literature reviews and supported grant writing<br>
-  • Synthesized complex health data into accessible public communications<br>
-  • Supported collaborative cross-departmental research efforts</p>
-</section>
+      <section class="grid cols-2" aria-label="Skills and tools">
+        <div class="card">
+          <h2 class="section" style="margin-top:0">Core Skills</h2>
+          <div class="chiprow">
+            <span class="pill">Content strategy</span>
+            <span class="pill">SEO</span>
+            <span class="pill">CRO</span>
+            <span class="pill">UX writing</span>
+            <span class="pill">Organic traffic growth</span>
+            <span class="pill">Lead generation</span>
+            <span class="pill">Funnel analysis</span>
+            <span class="pill">Editorial management</span>
+            <span class="pill">Remote collaboration</span>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="section" style="margin-top:0">Tools</h2>
+          <div class="chiprow">
+            <span class="pill">WordPress</span>
+            <span class="pill">Shopify</span>
+            <span class="pill">GA4</span>
+            <span class="pill">Hotjar</span>
+            <span class="pill">Ahrefs</span>
+            <span class="pill">Surfer</span>
+            <span class="pill">Yoast</span>
+            <span class="pill">Notion</span>
+            <span class="pill">Trello</span>
+            <span class="pill">Slack</span>
+            <span class="pill">Loom</span>
+            <span class="pill">Canva</span>
+          </div>
+        </div>
+      </section>
 
-    <section>
-      <h2>Selected Work</h2>
-      <li><a href="https://www.discovermagazine.com/planet-earth/certain-animals-tolerate-spicy-foods-better-than-others" target="_blank">Featured Expert – Discover Magazine: Why Some Animals Tolerate Spicy Foods</a></li>
-      <li><a href="https://www.catster.com/ask-the-vet/homemade-low-carb-chicken-cat-food-recipe/" target="_blank">Homemade Low-Carb Chicken Cat Food Recipe – Catster</a></li>
-      <li><a href="https://articles.hepper.com/do-cats-have-periods/" target="_blank">Do Cats Have Periods? Our Vet’s Guide – Hepper</a></li>
-      <li><a href="https://pangovet.com/pet-nutrition/birds/can-parrots-eat-coconut/" target="_blank">Can Parrots Eat Coconut? – PangoVet</a></li>
-      <li><a href="https://www.dogster.com/ask-the-vet/flehmen-response-in-dogs-vet-answer" target="_blank">What Is the Flehmen Response in Dogs? – Dogster</a></li>
-      <li><a href="https://www.catster.com/lifestyle/best-cat-bowls/">10 Best Cat Bowls in 2025 - Catster</a></li>
-      <h3>Video Work</h3>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=vE55Do8ps-A" target="_blank">YouTube: Is RAW Meat And Fish Good For Cats?</a></li>
-        <li><a href="https://youtu.be/wGmWXRyeET0?si=DS1ldUMiiHqfLKZX" target="_blank">YouTube: Why Scottish Folds Aren't Recommended By Vets</a></li>
-      </ul>
-    </section>
+      <section class="card" aria-labelledby="selected-work">
+        <h2 id="selected-work" class="section" style="margin-top:0">Selected Work</h2>
+        <ul class="links-list">
+          <li><a href="https://www.discovermagazine.com/planet-earth/certain-animals-tolerate-spicy-foods-better-than-others" target="_blank" rel="noopener">Featured Expert — Discover Magazine: Why Some Animals Tolerate Spicy Foods</a></li>
+          <li><a href="https://www.catster.com/ask-the-vet/homemade-low-carb-chicken-cat-food-recipe/" target="_blank" rel="noopener">Homemade Low-Carb Chicken Cat Food Recipe — Catster</a></li>
+          <li><a href="https://articles.hepper.com/do-cats-have-periods/" target="_blank" rel="noopener">Do Cats Have Periods? Vet Guide — Hepper</a></li>
+          <li><a href="https://pangovet.com/pet-nutrition/birds/can-parrots-eat-coconut/" target="_blank" rel="noopener">Can Parrots Eat Coconut — PangoVet</a></li>
+          <li><a href="https://www.dogster.com/ask-the-vet/flehmen-response-in-dogs-vet-answer" target="_blank" rel="noopener">What Is the Flehmen Response in Dogs — Dogster</a></li>
+          <li><a href="https://www.catster.com/lifestyle/best-cat-bowls/" target="_blank" rel="noopener">10 Best Cat Bowls in 2025 — Catster</a></li>
+        </ul>
+        <h3 style="margin:18px 0 8px 0">Video Work</h3>
+        <ul class="links-list">
+          <li><a href="https://www.youtube.com/watch?v=vE55Do8ps-A" target="_blank" rel="noopener">Is RAW Meat And Fish Good For Cats</a></li>
+          <li><a href="https://youtu.be/wGmWXRyeET0?si=DS1ldUMiiHqfLKZX" target="_blank" rel="noopener">Why Scottish Folds Are Not Recommended By Vets</a></li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Author Pages</h2>
-      <ul>
-        <li><a href="https://pangovet.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank">PangoVet Author Page</a></li>
-        <li><a href="https://articles.hepper.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank">Hepper Author Page</a></li>
-        <li><a href="https://www.dogster.com/author/dr-luqman-javed" target="_blank">Dogster Author Page</a></li>
-        <li><a href="https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/" target="_blank">Catster Author Page</a></li>
-      </ul>
-    </section>
+      <section class="grid cols-2" aria-label="Authors and education">
+        <div class="card">
+          <h2 class="section" style="margin-top:0">Author Pages</h2>
+          <ul class="links-list">
+            <li><a href="https://pangovet.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank" rel="noopener">PangoVet</a></li>
+            <li><a href="https://articles.hepper.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank" rel="noopener">Hepper</a></li>
+            <li><a href="https://www.dogster.com/author/dr-luqman-javed" target="_blank" rel="noopener">Dogster</a></li>
+            <li><a href="https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/" target="_blank" rel="noopener">Catster</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 class="section" style="margin-top:0">Certifications and Education</h2>
+          <ul class="links-list">
+            <li>AI in Marketing — DeepLearning.ai, 2025</li>
+            <li>Doctor of Veterinary Medicine — Universiti Putra Malaysia, Best Final Year Project</li>
+            <li>Natural Animal Nutrition — College of Integrative Veterinary Therapies</li>
+            <li>IELTS Band 9 English</li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-    <section>
-      <h2>Certifications & Education</h2>
-      <ul>
-        <li>AI Certification - DeepLearning.ai, 2025</li>
-        <li>IELTS – Band 9 (Expert User)</li>
-        <li>Natural Animal Nutrition – College of Integrative Veterinary Therapies</li>
-        <li>Doctor of Veterinary Medicine – Universiti Putra Malaysia</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Tools & Platforms</h2>
-      <p>WordPress • Yoast SEO • Ahrefs • Figma • Notion • Trello • Slack • Google Workspace • Canva • Grammarly • Zoom</p>
-    </section>
-
-    <section>
-      <h2>Download My CV</h2>
-      <p><a href="Luqman_Lucky_Javed_CV.pdf" download>Click here to download my CV (PDF)</a></p>
-    </section>
+    <footer>
+      © 2025 Luqman (Lucky) Javed • <a href="mailto:admin@luqmanjaved.com">admin@luqmanjaved.com</a>
+    </footer>
   </div>
 
-  <footer>
-    &copy; 2025 Luqman Khalid Javed
-  </footer>
+  <!-- Minimal JSON-LD for better search results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luqman (Lucky) Javed",
+    "jobTitle": "Content Strategist",
+    "email": "admin@luqmanjaved.com",
+    "telephone": "+351962092461",
+    "url": "https://luqman-javed.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/luqman-lucky-javed-236696358/"
+    ],
+    "knowsAbout": [
+      "Content strategy", "SEO", "CRO", "UX copy", "Analytics", "Editorial workflows", "Funnel optimization"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porto",
+      "addressCountry": "Portugal"
+    }
+  }
+  </script>
 </body>
 </html>
