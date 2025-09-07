@@ -9,7 +9,88 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* keep your styles unchanged */
+    :root {
+      --bg: #ffffff;
+      --card: #f9fafc;
+      --ink: #1c1e21;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-ink: #ffffff;
+      --line: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 64px; }
+    header.hero {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f0f4ff 0%, #ffffff 100%);
+      margin-bottom: 28px;
+    }
+    .title h1 { margin: 0 0 6px 0; font-size: 34px; }
+    .title p.role { margin: 0; color: var(--muted); font-weight: 500; font-size: 18px; }
+    .title p.meta { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 10px 16px; border-radius: 10px;
+      border: 1px solid var(--line);
+      background: transparent; color: var(--ink); font-weight: 600;
+    }
+    .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+    .btn:hover { filter: brightness(1.05); }
+    .metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 20px; }
+    .metric {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .metric b { display: block; font-size: 20px; margin-bottom: 6px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 28px;
+    }
+    h2.section { margin: 0 0 18px 0; font-size: 22px; }
+    .grid { display: grid; gap: 16px; }
+    .grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    .bullets { margin: 0; padding-left: 18px; }
+    .bullets li { margin: 6px 0; }
+    .cs-grid { display: grid; gap: 16px; }
+    .cs-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    .cs {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .cs h3 { margin: 0 0 8px 0; font-size: 18px; }
+    .cs small { color: var(--muted); }
+    .cs dl { margin: 10px 0; }
+    .cs dt { font-weight: 700; margin-top: 8px; }
+    .cs dd { margin: 2px 0 8px 0; }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .grid.cols-2, .cs-grid.cols-2, .metrics { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -26,39 +107,50 @@
           <a class="btn" href="https://luqman-javed.github.io/" target="_blank" rel="noopener">Portfolio</a>
         </div>
         <div class="metrics" aria-label="Impact metrics">
-          <div class="metric"><b>Ad performance</b><span class="muted">UGC ads and scripts boosting CTR & ROAS</span></div>
-          <div class="metric"><b>Funnel growth</b><span class="muted">Improved lead capture and conversions</span></div>
-          <div class="metric"><b>SEO authority</b><span class="muted">Double-digit organic growth across brands</span></div>
-        </div>
-      </div>
-      <div class="card">
-        <h2 class="section" style="margin-top:0">Professional Summary</h2>
-        <p>Creative Strategist and Content Marketer with 4+ years of experience in DTC and B2B brands. Skilled in crafting UGC-style ads, YouTube scripts, and direct-response campaigns with measurable CTR and retention improvements. Experienced in SEO, CRO, and funnel optimization to ensure content and ads drive both visibility and conversions. Licensed veterinarian and certified nutritionist, applying research-driven clarity to complex industries.</p>
-        <div class="chiprow" aria-label="Core capabilities">
-          <span class="pill">Ad creation</span><span class="pill">UGC scripting</span><span class="pill">YouTube strategy</span>
-          <span class="pill">Direct-response copy</span><span class="pill">SEO roadmaps</span><span class="pill">CRO</span>
+          <div class="metric"><b>+40% CTR</b><span class="muted">UGC ads and scripts</span></div>
+          <div class="metric"><b>+20% Conversions</b><span class="muted">Landing page & ad alignment</span></div>
+          <div class="metric"><b>Double-digit growth</b><span class="muted">SEO-driven visibility</span></div>
         </div>
       </div>
     </header>
 
     <main aria-label="Main content">
-      <section class="card" aria-labelledby="experience">
-        <h2 id="experience" class="section">Experience</h2>
+      <section class="card">
+        <h2 class="section">Professional Summary</h2>
+        <p>Creative Strategist and Content Marketer with 4+ years of experience in DTC and B2B brands. Skilled in crafting UGC-style ads, YouTube scripts, and direct-response campaigns with measurable CTR and retention improvements. Experienced in SEO, CRO, and funnel optimization to ensure content and ads drive both visibility and conversions. Licensed veterinarian and certified nutritionist, applying research-driven clarity to complex industries.</p>
+      </section>
 
+      <section class="card">
+        <h2 class="section">Ad Work Samples</h2>
+        <div class="cs-grid cols-2">
+          <article class="cs">
+            <h3>UGC Ad Script (Anonymized)</h3>
+            <p class="muted">Short-form ad script built for DTC campaign</p>
+            <a class="btn" href="Ad_Script_Sample_1.pdf" target="_blank">View Sample (PDF)</a>
+          </article>
+          <article class="cs">
+            <h3>YouTube Funnel Script</h3>
+            <p class="muted">Longer video ad script with hooks and retention tactics</p>
+            <a class="btn" href="Ad_Script_Sample_2.pdf" target="_blank">View Sample (PDF)</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section">Experience</h2>
         <div class="grid cols-2">
           <div>
-            <h3 style="margin:0 0 6px 0">Freelance Creative Strategist & Ad Consultant</h3>
-            <p class="muted" style="margin:0 0 10px 0">Jan 2025 – Present • Remote</p>
+            <h3>Freelance Creative Strategist & Ad Consultant</h3>
+            <p class="muted">Jan 2025 – Present • Remote</p>
             <ul class="bullets">
               <li>Delivered 50+ ad concepts, YouTube scripts, and UGC frameworks for SaaS and DTC clients.</li>
               <li>Improved CTR by 35% through testing hooks, CTAs, and creative angles.</li>
               <li>Collaborated with editors/designers to align scripts with high-performing visuals.</li>
             </ul>
           </div>
-
           <div>
-            <h3 style="margin:0 0 6px 0">Pangolia — Content Manager & Strategist</h3>
-            <p class="muted" style="margin:0 0 10px 0">Jan 2022 – Dec 2024 • Remote</p>
+            <h3>Pangolia — Content Manager & Strategist</h3>
+            <p class="muted">Jan 2022 – Dec 2024 • Remote</p>
             <ul class="bullets">
               <li>Scripted ads and explainers for Catster, Dogster, and Hepper, boosting engagement 2x over static content.</li>
               <li>Contributed to +20% uplift in lead capture via cross-platform ad campaigns.</li>
@@ -68,9 +160,8 @@
         </div>
       </section>
 
-      <section class="card" aria-labelledby="case-studies">
-        <h2 id="case-studies" class="section">Case Studies</h2>
-
+      <section class="card">
+        <h2 class="section">Case Studies</h2>
         <div class="cs-grid cols-2">
           <article class="cs">
             <h3>YouTube Ads & Funnel Strategy</h3>
@@ -83,9 +174,7 @@
               <dt>Results</dt>
               <dd>CTR +40%, scalable past €1K spend, consistent lead flow delivered.</dd>
             </dl>
-            <span class="tag">YouTube</span><span class="tag">Direct response</span><span class="tag">Ad creation</span>
           </article>
-
           <article class="cs">
             <h3>Landing Page CRO & Ad Alignment</h3>
             <small class="muted">Role: UX Copywriter & Strategist</small>
@@ -97,26 +186,7 @@
               <dt>Results</dt>
               <dd>Higher CTR and reduced bounce rate, improved funnel progression.</dd>
             </dl>
-            <span class="tag">CRO</span><span class="tag">Funnel strategy</span><span class="tag">UX copy</span>
           </article>
-        </div>
-      </section>
-
-      <section class="grid cols-2">
-        <div class="card">
-          <h2 class="section" style="margin-top:0">Core Skills</h2>
-          <div class="chiprow">
-            <span class="pill">Ad creation</span><span class="pill">UGC scripting</span><span class="pill">Direct-response copywriting</span>
-            <span class="pill">YouTube scripting</span><span class="pill">SEO</span><span class="pill">CRO</span>
-          </div>
-        </div>
-        <div class="card">
-          <h2 class="section" style="margin-top:0">Tools</h2>
-          <div class="chiprow">
-            <span class="pill">YouTube Analytics</span><span class="pill">TubeBuddy</span><span class="pill">VidIQ</span>
-            <span class="pill">GA4</span><span class="pill">Hotjar</span><span class="pill">Ahrefs</span>
-            <span class="pill">Notion</span><span class="pill">Slack</span><span class="pill">Canva</span>
-          </div>
         </div>
       </section>
     </main>
