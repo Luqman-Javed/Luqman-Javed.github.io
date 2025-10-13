@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Luqman Javed — Content Marketing Manager & Creative Strategist</title>
-  <meta name="description" content="Content Marketing Manager and Creative Strategist with expertise in brand storytelling, SEO, and digital campaigns. Driving growth for tech, wellness, and DTC brands." />
+  <title>Dr. Luqman Javed, DVM — Veterinary Consultant & Content Strategist</title>
+  <meta name="description" content="Veterinarian (DVM) and Content Strategist with expertise in pet nutrition, SEO, and brand storytelling for tech, wellness, and DTC brands." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,6 +18,7 @@
       --accent-ink: #ffffff;
       --line: #e5e7eb;
     }
+    html { scroll-behavior: smooth; }
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -57,6 +58,25 @@
       text-align: center;
     }
     .metric b { display: block; font-size: 20px; margin-bottom: 6px; }
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 28px;
+      padding: 10px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    .quick-nav a {
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .quick-nav a:hover {
+      color: var(--accent);
+    }
     .card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -97,108 +117,92 @@
   <div class="wrap">
     <header class="hero" aria-label="Intro">
       <div class="title">
-        <h1>Luqman Javed</h1>
-        <p class="role">Content Marketing Manager • Creative Strategist • SEO & Storytelling Specialist</p>
-        <p class="meta">Porto, Portugal (UTC+0) • IELTS Band 9 English</p>
+        <h1>Dr. Luqman Javed, DVM</h1>
+        <p class="role">Veterinary Consultant • Content & SEO Strategist • Certified Nutritionist</p>
+        <p class="meta">Porto, Portugal • Certified Canine & Feline Nutritionist (CIVT) • Native English Proficiency</p>
         <div class="cta" role="group" aria-label="Primary actions">
-          <a class="btn primary" href="Luqman_Javed_CV.pdf" download>Download CV (PDF)</a>
-          <a class="btn" href="mailto:admin@luqmanjaved.com">Email</a>
+          <a class="btn primary" href="mailto:admin@luqmanjaved.com">Email Me</a>
           <a class="btn" href="https://www.linkedin.com/in/luqman-javed-236696358/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
         <div class="metrics" aria-label="Impact metrics">
           <div class="metric"><b>+100k Readers</b><span class="muted">Across Catster, Dogster, Hepper</span></div>
-          <div class="metric"><b>+20% Organic Growth</b><span class="muted">SEO-driven content strategy</span></div>
-          <div class="metric"><b>Global Reach</b><span class="muted">Featured in Discover magazine</span></div>
+          <div class="metric"><b>+50% Engagement Growth</b><span class="muted">Evidence-Based Content</span></div>
+          <div class="metric"><b>Trusted Veterinary Expert</b><span class="muted">For Pet Wellness Brands</span></div>
         </div>
       </div>
     </header>
 
+    <nav class="quick-nav" aria-label="Quick navigation">
+        <a href="#veterinary">Veterinary Expertise</a>
+        <a href="#creative">Creative & SEO Strategy</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <main aria-label="Main content">
       <section class="card">
         <h2 class="section">Professional Summary</h2>
-        <p>Content Marketing Manager and Creative Strategist with 4+ years of experience in shaping brand voice, storytelling, and SEO-led growth strategies across DTC, wellness, and tech. Skilled in developing high-impact content strategies, managing editorial calendars, and creating content that builds both awareness and adoption. Licensed veterinarian and certified nutritionist with a track record of translating complex ideas into accessible narratives that resonate with global audiences.</p>
+        <p>A dual-specialist professional combining deep veterinary and nutritional expertise with a proven track record in digital content strategy. As a Veterinarian (DVM) and Certified Canine & Feline Nutritionist, I specialize in translating complex scientific topics into clear, trustworthy, and engaging content that resonates with pet owners. Experienced in SEO-led growth, telehealth consultations, and collaborating with global pet brands to ensure scientific accuracy and drive business results.</p>
+      </section>
+
+      <section class="card" id="veterinary">
+        <h2 class="section">Veterinary Expertise & Services</h2>
+        <div class="grid cols-2">
+          <div>
+            <ul class="bullets">
+              <li>Recipe Formulation & Analysis</li>
+              <li>Nutritional Consultations (Telehealth)</li>
+              <li>Supplement & Product Review</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="bullets">
+              <li>E-E-A-T Content Strategy & Review</li>
+              <li>Scientific Accuracy & Compliance Checks</li>
+              <li>Veterinary Telehealth Services</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="card">
-        <h2 class="section">Content Samples</h2>
+        <h2 class="section">Author & Content Portfolio</h2>
         <div class="cs-grid cols-2">
           <article class="cs">
-            <h3>How to Tell If Your Cat Is Lonely</h3>
-            <p class="muted">Behavioural piece for Catster</p>
-            <a class="btn" href="https://www.catster.com/ask-the-vet/how-to-tell-if-your-cat-is-lonely/" target="_blank">Read Article</a>
+            <h3>Catster Author Page</h3>
+            <p class="muted">Articles on feline health and behavior.</p>
+            <a class="btn" href="https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/" target="_blank">Browse Articles</a>
+          </article>
+          <article class="cs">
+            <h3>Dogster Author Page</h3>
+            <p class="muted">Guides on canine wellness and care.</p>
+            <a class="btn" href="https://www.dogster.com/author/dr-luqman-javed" target="_blank">Browse Articles</a>
+          </article>
+          <article class="cs">
+            <h3>Are Cats Obligate Carnivores?</h3>
+            <p class="muted">Technical nutrition deep dive for PangoVet.</p>
+            <a class="btn" href="https://info.pangovet.com/pet-nutrition/cats/are-cats-obligate-carnivores/" target="_blank">Read Article</a>
           </article>
           <article class="cs">
             <h3>Exercises for Dogs with Arthritis</h3>
             <p class="muted">Wellness guide for Dogster</p>
             <a class="btn" href="https://www.dogster.com/dog-health-care/exercises-for-dogs-with-arthritis" target="_blank">Read Article</a>
           </article>
-          <article class="cs">
-            <h3>Are Cats Obligate Carnivores?</h3>
-            <p class="muted">Technical nutrition deep dive for PangoVet</p>
-            <a class="btn" href="https://info.pangovet.com/pet-nutrition/cats/are-cats-obligate-carnivores/" target="_blank">Read Article</a>
-          </article>
         </div>
       </section>
 
-      <section class="card">
-        <h2 class="section">Author Portfolio</h2>
+      <section class="card" id="creative">
+        <h2 class="section">Case Studies: Creative & SEO Strategy</h2>
         <div class="cs-grid cols-2">
           <article class="cs">
-            <h3>Catster Author Page</h3>
-            <a class="btn" href="https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/" target="_blank">Browse Articles</a>
-          </article>
-          <article class="cs">
-            <h3>Dogster Author Page</h3>
-            <a class="btn" href="https://www.dogster.com/author/dr-luqman-javed" target="_blank">Browse Articles</a>
-          </article>
-          <article class="cs">
-            <h3>Hepper Author Page</h3>
-            <a class="btn" href="https://articles.hepper.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank">Browse Articles</a>
-          </article>
-          <article class="cs">
-            <h3>PangoVet Author Page</h3>
-            <a class="btn" href="https://info.pangovet.com/author/dr-luqman-javed-veterinarian-dvm/?e-page-4dc7e3de=2" target="_blank">Browse Articles</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2 class="section">Experience</h2>
-        <div class="grid cols-2">
-          <div>
-            <h3>Freelance Creative Strategist & Content Consultant</h3>
-            <p class="muted">Jan 2025 – Present • Remote</p>
-            <ul class="bullets">
-              <li>Developed ad and content strategies for SaaS and DTC clients, delivering measurable improvements in CTR and engagement.</li>
-              <li>Created YouTube scripts, long-form articles, and blog series for multi-channel growth.</li>
-              <li>Collaborated with editors and designers to align storytelling with visuals.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Pangolia — Content Manager & Strategist</h3>
-            <p class="muted">Jan 2022 – Dec 2024 • Remote</p>
-            <ul class="bullets">
-              <li>Directed content strategy for Catster, Dogster, and Hepper, balancing SEO with storytelling.</li>
-              <li>Collaborated on product campaigns (Hepper NomNom Bowl, Hi-Lo Scratcher), aligning messaging with UX and design.</li>
-              <li>Contributed to consistent double-digit growth in organic traffic through SEO-led editorial planning.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2 class="section">Case Studies</h2>
-        <div class="cs-grid cols-2">
-          <article class="cs">
-            <h3>SEO Blog Strategy & Execution</h3>
-            <small class="muted">Role: Content Strategist</small>
+            <h3>Evidence-Based Content Strategy</h3>
+            <small class="muted">Role: Content Strategist & Vet Reviewer</small>
             <dl>
               <dt>Goal</dt>
-              <dd>Grow organic visibility and establish authority for a pet wellness brand.</dd>
+              <dd>Grow organic visibility and establish scientific authority for a pet wellness brand.</dd>
               <dt>Actions</dt>
-              <dd>Planned keyword-driven editorial calendar, optimized blog structure, ensured tone and clarity for global audiences.</dd>
+              <dd>Planned keyword-driven editorial calendar, ensured scientific accuracy of all content, and optimized for E-E-A-T standards.</dd>
               <dt>Results</dt>
-              <dd>Double-digit organic traffic growth, improved keyword rankings, and increased lead capture.</dd>
+              <dd>+50% organic engagement growth, top-ranking positions for competitive keywords, and increased brand trust.</dd>
             </dl>
           </article>
           <article class="cs">
@@ -215,10 +219,34 @@
           </article>
         </div>
       </section>
+
+      <section class="card">
+        <h2 class="section">Experience</h2>
+        <div class="grid cols-2">
+          <div>
+            <h3>Veterinary Consultant & Nutrition Specialist</h3>
+            <p class="muted">Jan 2025 – Present • Remote</p>
+            <ul class="bullets">
+              <li>Provided nutritional consultations and recipe formulation guidance for canine and feline wellness brands.</li>
+              <li>Conducted veterinary telehealth consultations for pet owners with a focus on nutrition.</li>
+              <li>Collaborated with international pet companies (UK, Australia, South Korea) to review products.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Pangolia — Content Manager & Strategist</h3>
+            <p class="muted">Jan 2022 – Dec 2024 • Remote</p>
+            <ul class="bullets">
+              <li>Directed content strategy for Catster, Dogster, and Hepper, balancing SEO with brand storytelling.</li>
+              <li>Collaborated on product marketing campaigns, aligning messaging with UX and design.</li>
+              <li>Contributed to consistent double-digit growth in organic traffic through SEO-led editorial planning.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      © 2025 Luqman Javed • <a href="mailto:admin@luqmanjaved.com">admin@luqmanjaved.com</a>
+    <footer id="contact">
+      © 2025 Dr. Luqman Javed • <a href="mailto:admin@luqmanjaved.com">admin@luqmanjaved.com</a>
     </footer>
   </div>
 </body>
