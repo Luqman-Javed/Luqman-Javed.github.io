@@ -1,237 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luqman Javed - SEO Strategist & Content Architect</title>
+    <title>Luqman Javed | SEO Strategist & Content Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #fdfdfd;
-            color: #333;
-            display: flex;
-            justify-content: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0;
-        }
-        h2 {
-             border-bottom: 2px solid #eee;
-             padding-bottom: 10px;
-             margin-top: 40px;
-        }
-        h3 {
-            margin-bottom: 5px;
-            font-size: 1.4em;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #666;
-            margin-top: 10px;
-        }
-        .bio {
-            text-align: center;
-            font-size: 1.1em;
-            margin-bottom: 40px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .skills-list {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        .skills-list li {
-            display: inline-block;
-            background: #f4f4f4;
-            color: #333;
-            padding: 8px 15px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 0.9em;
-        }
-        /* --- NEW Case Study Styles --- */
-        .case-study {
-            background-color: #fff;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .case-study h4 {
-            font-size: 1.1em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        .results-block {
-            background-color: #f7f9fc;
-            border-left: 4px solid #4a90e2;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 4px;
-        }
-        .results-block ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .results-block li {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-        .results-block strong {
-            font-size: 1.4em;
-            color: #4a90e2;
-        }
-        
-        /* --- NEW Call to Action Styles --- */
-        .cta-section {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-        .cta-section h3 {
-            margin-top: 0;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #333;
-            color: #fff;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
+        .impact-highlight {
+            background-color: #EFF6FF; /* A light blue color from Tailwind's palette */
+            border-left: 4px solid #3B82F6; /* A matching blue border */
         }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800">
 
-    <div class="container">
-        <header>
-            <h1>Dr. Luqman Javed</h1>
-            <p>SEO Strategist &amp; Content Architect</p>
-        </header>
-
-        <!-- MODIFIED Bio Section -->
-        <div class="bio">
-            <p>
-                I'm an SEO strategist who brings a uniquely data-driven perspective to the digital landscape, a skill honed by my scientific background as a Doctor of Veterinary Medicine. My rigorous training in research and analytical problem-solving is the foundation of my approach to developing successful, evidence-based SEO strategies.
+    <!-- Header & Intro Section -->
+    <header class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Luqman Javed</h1>
+            <h2 class="mt-2 text-xl md:text-2xl font-semibold text-blue-600">SEO Strategist & Content Architect</h2>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-slate-600 leading-relaxed">
+                I'm Dr. Luqman Javed, an SEO strategist who brings a uniquely data-driven perspective to the digital landscape, a skill honed by my scientific background as a Doctor of Veterinary Medicine. My rigorous training in research and analytical problem-solving is the foundation of my approach to developing successful, evidence-based SEO strategies.
             </p>
         </div>
+        <div class="mt-8 flex justify-center gap-4">
+            <a href="mailto:admin@luqmanjaved.com" class="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/luqman-khalid-javed-236696358/" target="_blank" rel="noopener noreferrer" class="bg-white text-slate-700 font-semibold py-2 px-5 rounded-lg border border-slate-300 hover:bg-slate-100 transition-colors duration-300">
+                LinkedIn
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-20">
         
-        <hr>
-
-        <!-- NEW Case Studies Section -->
-        <div class="section">
-            <h2>Case Studies & Impact</h2>
-
+        <!-- Case Studies Section -->
+        <section id="case-studies">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Case Studies</h2>
+            
             <!-- Case Study 1: Local SEO -->
-            <div class="case-study">
-                <h3>Case Study: Driving +150% Lead Growth for a Multi-Location Business</h3>
-                <p>A multi-location veterinary clinic with a strong offline reputation had a weak online presence, making them invisible in local search results for high-intent keywords.</p>
-                
-                <h4>The Challenge</h4>
-                <p>The business suffered from unoptimized Google Business Profiles, inconsistent NAP data across the web, a lack of localized website content, and poor review management.</p>
-                
-                <h4>The Strategy</h4>
-                <ul>
-                    <li>Executed a complete overhaul of Google Business Profiles for all locations.</li>
-                    <li>Developed unique, SEO-optimized location pages on the main website.</li>
-                    <li>Conducted a comprehensive citation audit to fix inconsistencies and built new, high-authority local citations.</li>
-                    <li>Implemented a proactive reputation management system to generate and respond to reviews.</li>
-                </ul>
-
-                <h4>The Impact</h4>
-                <div class="results-block">
-                    <ul>
-                        <li><strong>+150%</strong> Increase in Clicks-to-Call from Google Business Profile</li>
-                        <li><strong>85%</strong> Growth in Website Traffic from Local Search</li>
-                        <li><strong>Achieved Top 3</strong> Local Pack Rankings for 15+ high-value keywords</li>
-                        <li><strong>Improved Average Rating</strong> from 3.8 to 4.7 stars on Google</li>
+            <div class="bg-white rounded-xl shadow-lg p-8 md:p-10 mb-12 ring-1 ring-slate-900/5">
+                <h3 class="text-2xl font-bold text-slate-900">Driving +150% Lead Growth for a Multi-Location Service Business</h3>
+                <div class="mt-6 space-y-4 text-slate-600 text-lg leading-relaxed">
+                    <p><strong class="font-semibold text-slate-800">The Challenge:</strong> A successful multi-location pet services business had a strong brand but was nearly invisible in local search results. Their website traffic was stagnant, and more importantly, they were not generating leads (phone calls, appointment bookings) through Google, especially from the crucial "map pack."</p>
+                    <p><strong class="font-semibold text-slate-800">My Strategy:</strong> I developed and executed a comprehensive Local SEO strategy focused on three core pillars:</p>
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+                        <li><strong>Google Business Profile (GBP) Optimization:</strong> I performed a full optimization of all location profiles, ensuring complete and accurate information, strategic category selection, and consistent NAP (Name, Address, Phone) data.</li>
+                        <li><strong>On-Page Local SEO:</strong> I created and optimized unique, geo-targeted landing pages for each location, incorporating local keywords, service details, and schema markup to signal relevance to search engines.</li>
+                        <li><strong>Local Link Building & Citations:</strong> I built a foundation of high-quality local citations and pursued link-building opportunities with local community sites and relevant industry directories to boost local authority.</li>
                     </ul>
+                    <div class="mt-6 p-6 rounded-lg impact-highlight">
+                        <h4 class="font-bold text-xl text-slate-900 mb-2">The Impact:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-blue-800">
+                            <li><strong class="font-semibold">+150% Increase</strong> in Clicks-to-Call from Google Business Profiles within 6 months.</li>
+                            <li><strong class="font-semibold">85% Growth</strong> in organic website traffic originating from local search queries.</li>
+                            <li>Achieved consistent **Top 3 Local Pack rankings** for high-value keywords across all major service locations.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Case Study 2: Content Systems -->
-            <div class="case-study">
-                <h3>Case Study: Scaling Content Production with a Data-Driven Brief System</h3>
-                <p>A digital publisher struggled with inconsistent content quality, poor on-page SEO across articles, and long, inefficient revision cycles with freelance writers.</p>
-
-                <h4>The Challenge</h4>
-                <p>Content was being produced without a clear, data-informed strategy. This led to articles that failed to rank, required multiple rounds of edits, and did not align with business goals.</p>
-
-                <h4>The Strategy</h4>
-                <ul>
-                    <li>Developed and implemented a standardized, data-driven content brief system.</li>
-                    <li>Each brief integrated in-depth keyword research, user intent analysis, competitor insights, and a clear on-page SEO checklist (headings, internal links, etc.).</li>
-                    <li>Trained writers and editors on how to use the new system to streamline production and ensure every piece of content was created with purpose.</li>
-                </ul>
-
-                <h4>The Impact</h4>
-                <div class="results-block">
-                     <ul>
-                        <li><strong>-40%</strong> Reduction in revision requests and editing time</li>
-                        <li><strong>100%</strong> On-Page SEO consistency across 200+ new articles</li>
-                        <li><strong>Contributed to a +50%</strong> increase in overall organic engagement</li>
-                        <li><strong>Empowered writers</strong> to produce higher-quality content, improving team morale and efficiency.</li>
-                    </ul>
+            <!-- Case Study 2: Content System -->
+            <div class="bg-white rounded-xl shadow-lg p-8 md:p-10 mb-12 ring-1 ring-slate-900/5">
+                <h3 class="text-2xl font-bold text-slate-900">Scaling Content Quality with a Data-Driven Editorial System</h3>
+                 <div class="mt-6 space-y-4 text-slate-600 text-lg leading-relaxed">
+                    <p><strong class="font-semibold text-slate-800">The Challenge:</strong> A high-volume digital publisher was struggling with inconsistent content quality and poor SEO performance. Articles were often misaligned with user search intent, leading to low engagement, and the revision process was inefficient, creating bottlenecks that throttled growth.</p>
+                    <p><strong class="font-semibold text-slate-800">My Strategy:</strong> Instead of fixing articles one by one, I designed and implemented a centralized, data-driven content brief system to serve as the single source of truth for all content creation. The system integrated in-depth keyword research, user intent analysis, and a structured on-page SEO checklist into every brief. I then trained the writers and editors on how to leverage this system, making SEO a core part of the creative process.</p>
+                    <div class="mt-6 p-6 rounded-lg impact-highlight">
+                        <h4 class="font-bold text-xl text-slate-900 mb-2">The Impact:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-blue-800">
+                            <li>Primary driver behind a <strong class="font-semibold">+50% increase in organic engagement</strong> across multiple brands.</li>
+                            <li>Achieved <strong class="font-semibold">100% on-page SEO consistency</strong> across hundreds of new articles.</li>
+                            <li>Reduced content revision cycles by <strong class="font-semibold">40%</strong>, significantly improving publishing velocity.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- NEW Call to Action Section -->
-        <div class="cta-section">
-            <h3>Interested in working together?</h3>
-            <p>I'm always looking for new opportunities to help businesses grow their online presence. If you think I'd be a good fit for your team, I'd love to connect.</p>
-            <a href="mailto:admin@luqmanjaved.com" class="cta-button">Email Me</a>
-            <a href="https://www.linkedin.com/in/luqman-khalid-javed-236696358/" target="_blank" class="cta-button">Connect on LinkedIn</a>
-        </div>
+        </section>
 
-
-        <footer>
-            <div class="social-links">
-                 <p>&copy; 2025 Luqman Javed</p>
+        <!-- New Selected Publications Section -->
+        <section id="publications" class="mt-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Selected Publications</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <!-- Catster -->
+                <a href="https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/" target="_blank" rel="noopener noreferrer" class="flex justify-center">
+                    <img src="https://www.catster.com/wp-content/uploads/2023/10/catster-logo.png" alt="Catster Logo" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+                </a>
+                <!-- Dogster -->
+                <a href="https://www.dogster.com/author/dr-luqman-javed" target="_blank" rel="noopener noreferrer" class="flex justify-center">
+                    <img src="https://www.dogster.com/wp-content/uploads/2023/10/dogster-logo.png" alt="Dogster Logo" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+                </a>
+                <!-- Hepper -->
+                <a href="https://articles.hepper.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank" rel="noopener noreferrer" class="flex justify-center">
+                    <img src="https://www.hepper.com/wp-content/uploads/2021/11/Hepper-Logo-New-01_1600-1.png" alt="Hepper Logo" class="h-16 grayscale hover:grayscale-0 transition duration-300">
+                </a>
+                <!-- Pangovet -->
+                <a href="https://petcorner.pangovet.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank" rel="noopener noreferrer" class="flex justify-center">
+                     <img src="https://petcorner.pangovet.com/wp-content/uploads/2023/10/pangovet-pet-corner-logo.svg" alt="Pangovet Pet Corner Logo" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+                </a>
             </div>
-        </footer>
-    </div>
+        </section>
+
+
+        <!-- Call to Action Section -->
+        <section id="contact" class="mt-20 text-center">
+            <div class="bg-white rounded-xl shadow-lg p-8 md:p-10 ring-1 ring-slate-900/5">
+                <h3 class="text-2xl font-bold text-slate-900">Interested in working together?</h3>
+                <p class="mt-4 max-w-lg mx-auto text-lg text-slate-600">
+                    I'm always looking for new opportunities to help businesses grow their online presence. If you think I'd be a good fit for your team, I'd love to connect.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="mailto:admin@luqmanjaved.com" class="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                        Get in Touch
+                    </a>
+                    <a href="https://www.linkedin.com/in/luqman-khalid-javed-236696358/" target="_blank" rel="noopener noreferrer" class="bg-white text-slate-700 font-semibold py-2 px-5 rounded-lg border border-slate-300 hover:bg-slate-100 transition-colors duration-300">
+                        View LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
+
+
