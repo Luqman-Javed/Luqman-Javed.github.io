@@ -41,6 +41,18 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
+        /* Custom scrollbar for the systems horizontal scroll */
+        .systems-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+        .systems-scroll::-webkit-scrollbar-track {
+            background: #1e293b; 
+            border-radius: 4px;
+        }
+        .systems-scroll::-webkit-scrollbar-thumb {
+            background: #d97706; 
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -67,13 +79,10 @@
                 🎨 Creative Strategy
             </a>
             <a href="#audit-framework" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
-                🔍 Ad Auditing & Analysis
+                🔍 Ad Auditing
             </a>
-            <a href="#ai-ops" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
-                🤖 AI Operations
-            </a>
-            <a href="#seo" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
-                📈 Technical SEO
+            <a href="#systems" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
+                ⚙️ Content Systems & AI
             </a>
             <a href="#authority" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
                 ✍️ Vet Authority
@@ -221,73 +230,89 @@
             </div>
         </section>
 
-        <section id="ai-ops" class="py-16 md:py-20 bg-slate-900 text-slate-50 border-y border-slate-800 relative overflow-hidden">
+        <section id="systems" class="py-16 md:py-24 bg-slate-900 text-slate-50 border-y border-slate-800 relative overflow-hidden">
             <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAzNHYtNGgtdjRoLTh2NGgtdjRoOHY0aDh2LTRoNHptMC0xMnYtNGgtdjRoLTh2NGgtdjRoOHY0aDh2LTRoNHptLTE2IDh2LTRoLTh2NGg4em0tOCA4di00aC04djRoOHptOC0xNnYtNGgtOHY0aDh6bTE2IDh2LTRoOHY0aC04em04LTE2di00aDh2NGgtOHoiIGZpbGw9IiMzMzQxNTUiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9nPjwvc3ZnPg==')] opacity-50"></div>
             
-            <div class="max-w-5xl mx-auto px-6 relative z-10">
-                <div class="text-center">
-                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-white section-heading">AI Content Pipelines & Systems</h2>
-                    <p class="max-w-2xl mx-auto text-slate-400 mb-12 text-sm md:text-base">
-                        Scaling organic production while strictly safeguarding brand voice and maintaining negative constraints against generic AI footprints.
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="text-amber-500 font-bold tracking-widest text-xs uppercase bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full mb-4 inline-block">Architecture & Scalability</span>
+                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6">Content Systems & Protocol Architecture</h2>
+                    <p class="max-w-3xl mx-auto text-slate-400 text-sm md:text-lg leading-relaxed">
+                        I don't just execute marketing—I build the underlying <strong>SOPs, Multi-LLM engines, and Automated Workflows</strong> that allow agencies to scale production flawlessly. Here is a look at the proprietary protocols I've engineered to eradicate bottlenecks, enforce brand integrity, and bridge technical SEO with high-volume content operations.
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 backdrop-blur-sm card-hover transition-all">
-                        <div class="text-amber-500 text-3xl mb-4">🧠</div>
-                        <h3 class="font-heading text-lg font-bold text-white mb-2">Multi-LLM Engines</h3>
-                        <p class="text-slate-400 text-sm">
-                            Architected anti-hallucination content engines using Claude and Gemini to eradicate production bottlenecks and ensure zero-fluff, intent-driven copy.
-                        </p>
-                    </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                     
-                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 backdrop-blur-sm card-hover transition-all">
-                        <div class="text-amber-500 text-3xl mb-4">⚙️</div>
-                        <h3 class="font-heading text-lg font-bold text-white mb-2">Automated Workflow SOPs</h3>
-                        <p class="text-slate-400 text-sm">
-                            Designed automated workflow spreadsheets to bridge technical SEO architecture with daily content production, streamlining agency operations.
+                    <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-500 text-2xl border border-amber-500/20">🤖</div>
+                            <h3 class="font-heading text-xl font-bold text-white">Master AI Content Protocol</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
+                            Architected a robust multi-LLM (Claude/Gemini) content engine deployed at the agency level. Utilizes advanced "Anti-Bot" prompting constraints, Cross-Model QA checks, and negative footprints to completely eliminate AI fluff and hallucination at scale.
                         </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Claude & Gemini Workflow</span>
+                        </div>
                     </div>
 
-                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 backdrop-blur-sm card-hover transition-all">
-                        <div class="text-amber-500 text-3xl mb-4">🎭</div>
-                        <h3 class="font-heading text-lg font-bold text-white mb-2">Anti-Bot Prompting</h3>
-                        <p class="text-slate-400 text-sm">
-                            Engineering advanced prompt constraints and Cross-Model QA systems that force strict brand voice integrity and eliminate generic filler.
+                    <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 text-2xl border border-blue-500/20">🏗️</div>
+                            <h3 class="font-heading text-xl font-bold text-white">The "Foundational Triad"</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
+                            A proprietary research framework extracting raw market data, consumer dealbreakers, and core fears straight from competitor reviews. Translates "Problem Aware" search intent into high-converting Angle Statements for localized landing pages.
                         </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Direct-Response Copy SOP</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="seo" class="py-16 md:py-20 bg-slate-50 border-y border-slate-100">
-            <div class="max-w-5xl mx-auto px-6">
-                <div class="text-center">
-                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900 section-heading">Technical SEO Strategy</h2>
-                    <p class="max-w-2xl mx-auto text-slate-600 mb-12 text-sm md:text-base">
-                        Bridging the gap between technical site architecture and scalable content strategies to secure featured snippets and top-3 rankings.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm card-hover transition-all">
-                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">The "Foundational Triad" Framework</h3>
-                        <p class="text-slate-600 text-sm mb-4">A proprietary market research protocol extracting raw market data, consumer dealbreakers, and core fears from competitor reviews.</p>
-                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5">
-                            <li>Maps specific search intent to funnel stages.</li>
-                            <li>Identifies strategic "Angle Statements" for localized websites.</li>
-                            <li>Consults clients on service gaps to forge undisputed USPs.</li>
-                        </ul>
+                    <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center text-green-400 text-2xl border border-green-500/20">⚡</div>
+                            <h3 class="font-heading text-xl font-bold text-white">Automated SEO Workflows</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
+                            Designed comprehensive Master Content Spreadsheets integrating Keyword Mapping, On-Page QA, VA Checklists, and Technical SEO tracking into a single source of truth, creating a frictionless bridge between strategy and execution.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Cross-Functional Pipeline</span>
+                        </div>
                     </div>
-                    <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm card-hover transition-all">
-                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Advanced Schema & Auditing</h3>
-                        <p class="text-slate-600 text-sm mb-4">Conducting comprehensive site audits (Screaming Frog, GSC) to resolve crawl errors, indexation bloat, and JavaScript rendering issues.</p>
-                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5">
-                            <li>Engineer conflict-free @graph JSON-LD schema markup for perfect SERP eligibility.</li>
-                            <li>Correct complex multi-location entity logic and replace improper e-commerce tags.</li>
-                            <li>Optimize crawl budgets via Log File Analysis.</li>
-                        </ul>
+
+                    <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 text-2xl border border-purple-500/20">🕸️</div>
+                            <h3 class="font-heading text-xl font-bold text-white">Master Schema Protocol</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
+                            Engineered a strict implementation protocol for advanced <code>@graph</code> JSON-LD schemas. Resolves complex multi-location entity logic and incorrect tagging to prevent indexation penalties and secure Knowledge Graph visibility.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Technical SEO Standards</span>
+                        </div>
                     </div>
+
+                    <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20 md:col-span-2 lg:col-span-2">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-lg bg-rose-500/10 flex items-center justify-center text-rose-400 text-2xl border border-rose-500/20">🎯</div>
+                            <h3 class="font-heading text-xl font-bold text-white">Dynamic ICP Document Architecture</h3>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <p class="text-slate-400 text-sm flex-grow leading-relaxed md:w-1/2">
+                                Beyond simple demographics, I developed an intensive guide for creating Ideal Customer Profiles that map specific buyer anxieties, psychological triggers, and market sophistication to funnel awareness stages, perfectly aligning product messaging with consumer intent.
+                            </p>
+                            <ul class="text-sm text-slate-300 space-y-2 list-none md:w-1/2">
+                                <li class="flex items-start gap-2"><span class="text-rose-400">✓</span> Problem vs. Solution Aware Mapping</li>
+                                <li class="flex items-start gap-2"><span class="text-rose-400">✓</span> Consumer Psychology Extraction</li>
+                                <li class="flex items-start gap-2"><span class="text-rose-400">✓</span> B2B & DTC Persona Building</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
