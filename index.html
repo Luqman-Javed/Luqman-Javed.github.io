@@ -53,6 +53,13 @@
             background: #d97706; 
             border-radius: 4px;
         }
+        /* Hide default details arrow for custom styling */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -336,9 +343,9 @@
             <div class="max-w-6xl mx-auto px-6 relative z-10">
                 <div class="text-center mb-16">
                     <span class="text-amber-500 font-bold tracking-widest text-xs uppercase bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full mb-4 inline-block">Architecture & Scalability</span>
-                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6">Content Systems & Protocol Architecture</h2>
+                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6">GEO, AI Systems & Protocol Architecture</h2>
                     <p class="max-w-3xl mx-auto text-slate-400 text-sm md:text-lg leading-relaxed">
-                        I don't just execute marketing—I build the underlying <strong>SOPs, Multi-LLM engines, and Automated Workflows</strong> that allow agencies to scale production flawlessly. Here is a look at the proprietary protocols I've engineered to eradicate bottlenecks, enforce brand integrity, and bridge technical SEO with high-volume content operations.
+                        I don't just execute marketing—I build the underlying <strong>SOPs, Multi-LLM engines, and Automated Workflows</strong> that allow agencies to scale production flawlessly. Here is a look at the proprietary protocols I've engineered to eradicate bottlenecks, enforce brand integrity, and bridge technical SEO with high-volume, AI-driven content operations.
                     </p>
                 </div>
 
@@ -350,11 +357,19 @@
                             <h3 class="font-heading text-xl font-bold text-white">Master AI Content Protocol</h3>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
-                            Architected a robust multi-LLM (Claude/Gemini) content engine deployed at the agency level. Utilizes advanced "Anti-Bot" prompting constraints, Cross-Model QA checks, and negative footprints to completely eliminate AI fluff and hallucination at scale.
+                            Architected a robust multi-LLM (Claude/Gemini) content engine deployed at the agency level. Eliminates AI fluff and hallucination at scale.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Claude & Gemini Workflow</span>
-                        </div>
+                        <details class="group mt-auto bg-slate-900/50 rounded-lg border border-slate-700 open:bg-slate-900 overflow-hidden">
+                            <summary class="cursor-pointer text-amber-500 text-xs font-bold uppercase tracking-wider p-4 flex items-center justify-between hover:bg-slate-800/50 transition-colors list-none outline-none">
+                                <span class="flex items-center gap-2"><span>⚡</span> GEO & AI Search Impact</span>
+                                <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                            </summary>
+                            <div class="p-4 pt-0 text-slate-300 text-sm space-y-3">
+                                <p><strong class="text-white">AIO Snatch Blocks:</strong> Forces the generation of concise, 2-to-3 sentence definitive answers directly beneath H2s for Google AI Overviews to easily extract.</p>
+                                <p><strong class="text-white">Defeating the Fluency Heuristic:</strong> Mandates asymmetrical paragraph burstiness and high-perplexity vocabulary to bypass AI detectors and Model Collapse.</p>
+                                <p><strong class="text-white">Information Gain:</strong> Uses automated constraints to force placeholders (e.g., [INSERT STAT]), grounding content in factual, citable data for Perplexity.</p>
+                            </div>
+                        </details>
                     </div>
 
                     <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20">
@@ -363,11 +378,18 @@
                             <h3 class="font-heading text-xl font-bold text-white">The "Foundational Triad"</h3>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
-                            A proprietary research framework extracting raw market data, consumer dealbreakers, and core fears straight from competitor reviews. Translates "Problem Aware" search intent into high-converting Angle Statements for localized landing pages.
+                            A proprietary research framework extracting raw market data, consumer dealbreakers, and core fears straight from competitor reviews.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Direct-Response Copy SOP</span>
-                        </div>
+                        <details class="group mt-auto bg-slate-900/50 rounded-lg border border-slate-700 open:bg-slate-900 overflow-hidden">
+                            <summary class="cursor-pointer text-blue-400 text-xs font-bold uppercase tracking-wider p-4 flex items-center justify-between hover:bg-slate-800/50 transition-colors list-none outline-none">
+                                <span class="flex items-center gap-2"><span>⚡</span> Intent & Click Defense</span>
+                                <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                            </summary>
+                            <div class="p-4 pt-0 text-slate-300 text-sm space-y-3">
+                                <p><strong class="text-white">Zero-Click Defense:</strong> Engineers psychological hooks specifically designed to make users bypass AI-generated summaries and click directly to the client's site.</p>
+                                <p><strong class="text-white">Competitor Gap Analysis:</strong> Bulk-scraping Google Maps reviews to mathematically map "Table-Stakes" and local "Unmet Needs" to feed into LLM training contexts.</p>
+                            </div>
+                        </details>
                     </div>
 
                     <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20">
@@ -376,11 +398,18 @@
                             <h3 class="font-heading text-xl font-bold text-white">Automated SEO Workflows</h3>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
-                            Designed comprehensive Master Content Spreadsheets integrating Keyword Mapping, On-Page QA, VA Checklists, and Technical SEO tracking into a single source of truth, creating a frictionless bridge between strategy and execution.
+                            Designed Master Content Spreadsheets integrating Keyword Mapping, On-Page QA, VA Checklists, and Technical SEO tracking into a single source of truth.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Cross-Functional Pipeline</span>
-                        </div>
+                        <details class="group mt-auto bg-slate-900/50 rounded-lg border border-slate-700 open:bg-slate-900 overflow-hidden">
+                            <summary class="cursor-pointer text-green-400 text-xs font-bold uppercase tracking-wider p-4 flex items-center justify-between hover:bg-slate-800/50 transition-colors list-none outline-none">
+                                <span class="flex items-center gap-2"><span>⚡</span> Scale & Automation</span>
+                                <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                            </summary>
+                            <div class="p-4 pt-0 text-slate-300 text-sm space-y-3">
+                                <p><strong class="text-white">Cross-Functional Pipelines:</strong> Frictionless bridge between Technical SEO architecture and daily VA/Content execution.</p>
+                                <p><strong class="text-white">Programmatic Ready:</strong> Frameworks built to easily transition into headless CMS or n8n/Make automated data-to-page pipelines.</p>
+                            </div>
+                        </details>
                     </div>
 
                     <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20">
@@ -389,27 +418,43 @@
                             <h3 class="font-heading text-xl font-bold text-white">Master Schema Protocol</h3>
                         </div>
                         <p class="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
-                            Engineered a strict implementation protocol for advanced <code>@graph</code> JSON-LD schemas. Resolves complex multi-location entity logic and incorrect tagging to prevent indexation penalties and secure Knowledge Graph visibility.
+                            Engineered a strict implementation protocol for advanced <code>@graph</code> JSON-LD schemas. Resolves complex multi-location entity logic to spoon-feed LLMs.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-block bg-slate-900 text-slate-300 text-xs px-3 py-1.5 rounded-md border border-slate-700">Technical SEO Standards</span>
-                        </div>
+                        <details class="group mt-auto bg-slate-900/50 rounded-lg border border-slate-700 open:bg-slate-900 overflow-hidden">
+                            <summary class="cursor-pointer text-purple-400 text-xs font-bold uppercase tracking-wider p-4 flex items-center justify-between hover:bg-slate-800/50 transition-colors list-none outline-none">
+                                <span class="flex items-center gap-2"><span>⚡</span> LLM Entity Anchoring</span>
+                                <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                            </summary>
+                            <div class="p-4 pt-0 text-slate-300 text-sm space-y-3">
+                                <p><strong class="text-white">RAG Retrieval Optimization:</strong> Spoon-feeds LLMs conflict-free brand nodes so ChatGPT confidently understands and cites the client.</p>
+                                <p><strong class="text-white">The Global Power Block:</strong> Injects the primary business entity into the Global Site Header to act as a unified, conflict-free Source of Truth site-wide.</p>
+                                <p><strong class="text-white">Semantic Entity Mapping:</strong> Natively structuring LSI & NLP entities into the schema so AI instantly recognizes topical authority.</p>
+                            </div>
+                        </details>
                     </div>
 
                     <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 backdrop-blur-md card-hover transition-all flex flex-col h-full shadow-xl shadow-black/20 md:col-span-2 lg:col-span-2">
                         <div class="flex items-center gap-4 mb-5">
                             <div class="w-12 h-12 rounded-lg bg-rose-500/10 flex items-center justify-center text-rose-400 text-2xl border border-rose-500/20">🎯</div>
-                            <h3 class="font-heading text-xl font-bold text-white">Dynamic ICP Document Architecture</h3>
+                            <h3 class="font-heading text-xl font-bold text-white">Dynamic ICP & XML Web Copy</h3>
                         </div>
-                        <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex flex-col md:flex-row gap-6 h-full">
                             <p class="text-slate-400 text-sm flex-grow leading-relaxed md:w-1/2">
-                                Beyond simple demographics, I developed an intensive guide for creating Ideal Customer Profiles that map specific buyer anxieties, psychological triggers, and market sophistication to funnel awareness stages, perfectly aligning product messaging with consumer intent.
+                                A programmatic XML framework used to feed LLMs complex, mathematically locked SEO targets and UI/UX constraints. Beyond simple demographics, it maps specific buyer anxieties to funnel awareness stages, perfectly aligning product messaging with consumer intent.
                             </p>
-                            <ul class="text-sm text-slate-300 space-y-2 list-none md:w-1/2">
-                                <li class="flex items-start gap-2"><span class="text-rose-400">✓</span> Problem vs. Solution Aware Mapping</li>
-                                <li class="flex items-start gap-2"><span class="text-rose-400">✓</span> Consumer Psychology Extraction</li>
-                                <li class="flex items-start gap-2"><span class="text-rose-400">✓</span> B2B & DTC Persona Building</li>
-                            </ul>
+                            <div class="md:w-1/2 flex flex-col justify-end">
+                                <details class="group bg-slate-900/50 rounded-lg border border-slate-700 open:bg-slate-900 overflow-hidden">
+                                    <summary class="cursor-pointer text-rose-400 text-xs font-bold uppercase tracking-wider p-4 flex items-center justify-between hover:bg-slate-800/50 transition-colors list-none outline-none">
+                                        <span class="flex items-center gap-2"><span>⚡</span> View XML Mechanics</span>
+                                        <span class="transition-transform duration-300 group-open:rotate-180">▼</span>
+                                    </summary>
+                                    <div class="p-4 pt-0 text-slate-300 text-sm space-y-3">
+                                        <p><strong class="text-white">Decision Clarity Framework:</strong> Explicitly forbids subjective marketing "claims" (e.g., "We are reliable"), forcing the LLM to output objective "mechanisms" (e.g., "Upfront Flat-Rate Pricing").</p>
+                                        <p><strong class="text-white">Intent Routing Logic:</strong> Dynamic XML that automatically trims cognitive overload sections for "Emergency" service pages.</p>
+                                        <p><strong class="text-white">Anti-Fluff Prompting:</strong> Extracts the client's actual audio transcripts to build custom LLM system prompts featuring their exact vocabulary and slang.</p>
+                                    </div>
+                                </details>
+                            </div>
                         </div>
                     </div>
 
