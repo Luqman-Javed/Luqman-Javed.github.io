@@ -1,478 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth bg-slate-950 text-slate-50">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Luqman Javed | AI Systems Architect, Tech SEO & Growth Lead</title>
+    <title>Luqman "Lucky" Javed | Senior AI Systems Architect & DVM</title>
+    <meta name="description" content="Senior AI Systems Architect specializing in deterministic XML state-machines, Technical SEO, and YMYL E-E-A-T algorithmic trust. Based in Porto, Portugal.">
+    
+    <!-- Agentic Discovery: llms.txt v2 Implementation -->
+    <link rel="describedby" href="/llms.txt">
+    <link rel="alternate" type="text/markdown" href="/index.md">
 
-    <meta property="og:title" content="Luqman Javed | Revenue-First AI Systems Architect">
-    <meta property="og:description" content="I architect resilient, finite state-machine AI workflows, full-stack Technical SEO pipelines, and highly profitable paid media strategies. Bridging the gap between LLM engineering and enterprise growth.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://luqmanjaved.com/">
-
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend:wght@700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .font-heading { font-family: 'Lexend', sans-serif; }
         .font-mono { font-family: 'Fira Code', monospace; }
-        html { scroll-padding-top: 80px; } 
-        .section-heading {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background-color: #D97706; /* Amber-600 */
-            border-radius: 2px;
-        }
-        .section-heading-dark::after {
-            background-color: #8b5cf6; /* Purple-500 */
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-        }
-        /* Custom scrollbar */
+        /* Custom scrollbar for modern aesthetic */
         ::-webkit-scrollbar { height: 8px; width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-        
-        /* Progressive disclosure animations */
-        details > summary { list-style: none; cursor: pointer; outline: none; }
-        details > summary::-webkit-details-marker { display: none; }
-        details[open] summary ~ * { animation: sweep .3s ease-in-out; }
-        @keyframes sweep {
-            0%    {opacity: 0; transform: translateY(-10px)}
-            100%  {opacity: 1; transform: translateY(0)}
-        }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
     </style>
+
+    <!-- Unified Entity JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Luqman Javed",
+      "alternateName": "Lucky",
+      "jobTitle": "Senior AI Systems Architect & Doctor of Veterinary Medicine",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vila Nova de Gaia",
+        "addressRegion": "Porto District",
+        "addressCountry": "Portugal"
+      },
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Senior AI Systems Architect"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Veterinarian"
+        }
+      ],
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "Finite-State Machines",
+        "Technical SEO",
+        "Clinical Diagnostics",
+        "Large Language Models"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Degree",
+          "name": "Doctor of Veterinary Medicine"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificate",
+          "name": "SEMrush Certified"
+        }
+      ],
+      "sameAs": [
+        "https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/",
+        "https://www.dogster.com/author/dr-luqman-javed",
+        "https://articles.hepper.com/author/dr-luqman-javed-veterinarian-dvm/",
+        "https://linkedin.com/in/luqman-khalid-javed-236696358/"
+      ]
+    }
+    </script>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="antialiased flex flex-col min-h-screen">
 
-    <!-- HERO SECTION -->
-    <header class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
-        <div class="mb-6 block w-full">
-            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-widest shadow-sm">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                Porto, Portugal • Available For Remote Roles
-            </span>
-        </div>
-
-        <h1 class="font-heading text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Luqman Javed
-        </h1>
-        
-        <h2 class="text-lg md:text-2xl font-medium text-slate-600 mb-8 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 flex-wrap">
-            <span class="text-amber-600 font-bold">AI Systems Architect</span> 
-            <span class="hidden md:inline text-slate-300">|</span> 
-            <span class="text-amber-600 font-bold">Technical SEO & GEO</span> 
-            <span class="hidden md:inline text-slate-300">|</span> 
-            <span class="text-amber-600 font-bold">Growth Strategist</span>
-        </h2>
-        
-        <p class="max-w-3xl mx-auto text-base md:text-lg text-slate-600 leading-relaxed mb-8">
-            I don't just execute marketing tasks; I engineer the autonomous systems that scale them. I architect resilient, <strong>finite state-machine AI workflows</strong>, full-stack technical SEO pipelines, and high-ROI paid media strategies. By bridging the gap between zero-hallucination LLM engineering, CMS automation, and enterprise conversion psychology, I build revenue engines that operate flawlessly.
-        </p>
-
-        <div class="flex flex-wrap justify-center gap-2 mb-10 max-w-4xl mx-auto">
-            <span class="px-3 py-1 bg-blue-700 text-white text-xs font-semibold rounded-md shadow-sm font-mono">🏅 SEMrush Certified (2026)</span>
-            <span class="px-3 py-1 bg-purple-700 text-white text-xs font-semibold rounded-md shadow-sm font-mono">&lt;XML/&gt; State-Machines</span>
-            <span class="px-3 py-1 bg-slate-800 text-white text-xs font-semibold rounded-md shadow-sm font-mono">☁️ n8n, Zapier & Python</span>
-            <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-md shadow-sm font-mono">📈 6.0x ROAS / $500k+ Spend</span>
-            <span class="px-3 py-1 bg-indigo-600 text-white text-xs font-semibold rounded-md shadow-sm font-mono">🧠 RAG & Cloudflare Proxies</span>
-            <span class="px-3 py-1 bg-amber-500 text-white text-xs font-semibold rounded-md shadow-sm font-mono">🕸️ JSON-LD @graph</span>
-            <span class="px-3 py-1 bg-rose-600 text-white text-xs font-semibold rounded-md shadow-sm font-mono">⚕️ Verified E-E-A-T (DVM)</span>
-        </div>
-
-        <div class="flex flex-wrap justify-center gap-3 text-sm font-semibold mb-10">
-            <a href="#ai-ecosystem" class="px-5 py-2.5 bg-slate-900 text-amber-500 border border-slate-900 rounded-full hover:bg-slate-800 hover:text-amber-400 transition-colors shadow-sm">
-                🤖 Custom AI Ecosystem
+    <!-- Sticky Navigation Shell -->
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="text-emerald-500 font-mono font-bold text-lg tracking-tighter hover:text-emerald-400 transition-colors" data-link>
+                &lt;LJ/&gt;
             </a>
-            <a href="#technical-seo" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
-                🕸️ Technical SEO & GEO
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+                <a href="/ai-architecture" class="hover:text-amber-400 transition-colors" data-link>AI Architecture</a>
+                <a href="/geo-seo" class="hover:text-amber-400 transition-colors" data-link>GEO & SEO</a>
+                <a href="/ymyl-trust" class="hover:text-amber-400 transition-colors" data-link>YMYL Trust</a>
+                <a href="/legacy-growth" class="hover:text-amber-400 transition-colors" data-link>Legacy Growth</a>
+                <a href="/field-notes" class="hover:text-amber-400 transition-colors" data-link>Field Notes</a>
+            </div>
+            <a href="mailto:admin@luqmanjaved.com" class="px-4 py-2 bg-emerald-600/10 text-emerald-500 border border-emerald-500/20 rounded-md text-sm font-mono hover:bg-emerald-600/20 transition-colors">
+                Ping System
             </a>
-            <a href="#paid-ads" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
-                📈 Paid Media & ROAS
-            </a>
-            <a href="#ymyl" class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-slate-700 hover:border-amber-500 hover:text-amber-600 transition-colors shadow-sm">
-                ⚕️ YMYL Trust (DVM)
-            </a>
-        </div>
-
-        <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4 px-4 sm:px-0">
-            <a href="mailto:admin@luqmanjaved.com" class="w-full sm:w-auto bg-amber-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-amber-700 transition-all shadow-lg shadow-amber-600/20 text-center">
-                Contact Me
-            </a>
-            <a href="MASTER_CV_Luqman_Javed.docx.pdf" target="_blank" class="w-full sm:w-auto bg-slate-900 text-white font-semibold py-3 px-8 rounded-lg hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20 text-center flex justify-center items-center gap-2">
-                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M12 21l-8-9h6v-12h4v12h6l-8 9zm9-1v2h-18v-2h18z"/></svg>
-                Download Executive CV
-            </a>
-            <a href="https://linkedin.com/in/luqman-khalid-javed-236696358/" target="_blank" class="w-full sm:w-auto bg-white text-slate-700 font-semibold py-3 px-8 rounded-lg border border-slate-200 hover:bg-slate-50 transition-all shadow-sm text-center">
-                LinkedIn Profile
-            </a>
-        </div>
+        </nav>
     </header>
 
-    <main>
+    <!-- Dynamic SPA Container -->
+    <main id="app-root" class="flex-grow flex flex-col"></main>
 
-        <!-- KPI GRID -->
-        <div class="bg-white border-y border-slate-200 py-8">
-            <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:divide-x md:divide-slate-100">
-                <div class="p-2">
-                    <div class="text-3xl font-bold text-amber-600 mb-1">$500k+</div>
-                    <div class="text-xs text-slate-500 font-bold uppercase tracking-wider">Ad Spend Managed (6x ROAS)</div>
-                </div>
-                <div class="p-2">
-                    <div class="text-3xl font-bold text-indigo-600 mb-1">23+</div>
-                    <div class="text-xs text-slate-500 font-bold uppercase tracking-wider">Enterprise AI Apps Built</div>
-                </div>
-                <div class="p-2">
-                    <div class="text-3xl font-bold text-emerald-600 mb-1">90% ↓</div>
-                    <div class="text-xs text-slate-500 font-bold uppercase tracking-wider">Drop in API Transfer Errors</div>
-                </div>
-                <div class="p-2">
-                    <div class="text-3xl font-bold text-purple-600 mb-1">156% 📈</div>
-                    <div class="text-xs text-slate-500 font-bold uppercase tracking-wider">Non-Brand SEO Impression Lift</div>
-                </div>
+    <!-- Standard Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-slate-500 text-sm mt-auto">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p>© 2026 Luqman "Lucky" Javed.</p>
+            <div class="flex items-center gap-2 mt-4 md:mt-0">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Vila Nova de Gaia, Porto, Portugal • Remote Ready</span>
             </div>
-        </div>
-
-        <!-- THE AI ECOSYSTEM SECTION -->
-        <section id="ai-ecosystem" class="py-16 md:py-24 bg-[#0f172a] text-slate-50 border-b border-slate-800 relative overflow-hidden">
-            <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-            
-            <div class="max-w-6xl mx-auto px-6 relative z-10">
-                <div class="text-center mb-16 flex flex-col items-center">
-                    <div class="mb-4 block w-full">
-                        <span class="text-purple-400 font-bold tracking-widest text-xs uppercase bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-full inline-block">LLM Research & Architecture</span>
-                    </div>
-                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6 section-heading section-heading-dark">Custom AI Ecosystem & Architectures</h2>
-                    <p class="max-w-3xl mx-auto text-slate-400 text-sm md:text-lg leading-relaxed">
-                        Standard conversational AI prompts collapse in production. I conduct forensic LLM diagnostics to build <strong>indestructible XML State Machines</strong> designed to survive contact with reality. I have engineered over 23 custom applications running natively on Claude and Gemini, integrating seamlessly with n8n, Zapier, and QuickClaw, to automate complex agency workflows.
-                    </p>
-                </div>
-
-                <h3 class="font-heading text-2xl font-bold text-white mb-6 text-center">Featured Applications</h3>
-                <div class="grid md:grid-cols-3 gap-6 mb-12">
-                    <!-- App 1 & 2 -->
-                    <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 backdrop-blur-sm shadow-lg card-hover">
-                        <div class="text-emerald-400 font-mono text-xs mb-2 uppercase tracking-widest">Claude Architecture</div>
-                        <h4 class="font-bold text-white mb-3 text-lg">Master Profile & Skeleton Builders</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Ingests hyper-local entities into 4 micro-data buckets via Gemini Deep Research. Maps 1:1 GBP categories to service URLs, resolving orphan pages and establishing deterministic, JSON-backed site architectures.
-                        </p>
-                    </div>
-
-                    <!-- App 3 & 4 -->
-                    <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 backdrop-blur-sm shadow-lg card-hover">
-                        <div class="text-amber-400 font-mono text-xs mb-2 uppercase tracking-widest">Claude Architecture</div>
-                        <h4 class="font-bold text-white mb-3 text-lg">Commercial & Blog Production</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Generates content constrained by strict XML rubrics. Enforces the "Flipped Hero Rule" for typographical CSS scoping, inserts 300-500 word technical diagnostics, and constructs 40-60 word GEO atomic answers.
-                        </p>
-                    </div>
-
-                    <!-- App 5 & 6 -->
-                    <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 backdrop-blur-sm shadow-lg card-hover">
-                        <div class="text-rose-400 font-mono text-xs mb-2 uppercase tracking-widest">Claude Architecture</div>
-                        <h4 class="font-bold text-white mb-3 text-lg">Automated NLP Auditors</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Zero-hallucination agents that evaluate copy using a 14-point A-N Rubric. Acts as a "Brake Pedal" to block failing logic. Outputs mathematical diagnostics and compressed XML <code>&lt;handoff_payload&gt;</code> blocks for seamless machine-to-machine transfer.
-                        </p>
-                    </div>
-
-                    <!-- App 7 -->
-                    <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 backdrop-blur-sm shadow-lg card-hover">
-                        <div class="text-indigo-400 font-mono text-xs mb-2 uppercase tracking-widest">Claude Architecture</div>
-                        <h4 class="font-bold text-white mb-3 text-lg">The Local GBP Suite</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            A dedicated suite encompassing the <strong>GBP Description Builder, Products, Category Mapping, Services, and Posts engines</strong>. Enforces evergreen compliance by stripping dynamic timelines and banning star-rating mentions.
-                        </p>
-                    </div>
-
-                    <!-- App 8 -->
-                    <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 backdrop-blur-sm shadow-lg card-hover">
-                        <div class="text-blue-400 font-mono text-xs mb-2 uppercase tracking-widest">Gemini Advanced</div>
-                        <h4 class="font-bold text-white mb-3 text-lg">Multimodal Image Evaluator</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Utilizes the HEIM visual framework to audit photographic assets. Validates safe zones for GBP local search (900x900px center on 4:3 canvas), detects OSHA violations, and enforces WCAG-compliant visual-first alt-text.
-                        </p>
-                    </div>
-
-                    <!-- App 9 -->
-                    <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 backdrop-blur-sm shadow-lg card-hover">
-                        <div class="text-sky-400 font-mono text-xs mb-2 uppercase tracking-widest">Claude / Cloudflare Proxy</div>
-                        <h4 class="font-bold text-white mb-3 text-lg">Image Generation Engine</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Generates a live, client-side HTML/JS Web Artifact widget that posts asynchronous requests to a secure Cloudflare Worker proxy, triggering the FLUX.2 Pro model. Maps aspect ratios strictly to destination CMS logic.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-[#1e1e2e] rounded-xl border border-slate-700 shadow-2xl overflow-hidden flex flex-col h-full card-hover max-w-4xl mx-auto">
-                    <div class="bg-slate-800/80 px-4 py-3 border-b border-slate-700 flex items-center justify-between">
-                        <div class="flex items-center gap-2">
-                            <div class="flex gap-1.5">
-                                <div class="w-3 h-3 rounded-full bg-rose-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-amber-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                            </div>
-                            <div class="text-xs text-slate-400 font-mono ml-2">State_Transfer_Payload.xml</div>
-                        </div>
-                    </div>
-                    <div class="p-6 text-sm font-mono text-slate-300 leading-relaxed overflow-x-auto">
-<pre><code class="language-xml"><span class="text-slate-400">&lt;!-- Example of Deterministic Machine-to-Machine Communication --&gt;</span>
-<span class="text-blue-400">&lt;handoff_payload&gt;</span>
-  <span class="text-purple-400">&lt;target_url&gt;</span>/service/location<span class="text-purple-400">&lt;/target_url&gt;</span>
-  <span class="text-purple-400">&lt;action_type&gt;</span>Rewrite<span class="text-purple-400">&lt;/action_type&gt;</span>
-  <span class="text-purple-400">&lt;deterministic_flags&gt;</span>
-    <span class="text-green-300">&lt;lateral_linking_enforced&gt;</span>true<span class="text-green-300">&lt;/lateral_linking_enforced&gt;</span>
-    <span class="text-green-300">&lt;em_dash_eradication_required&gt;</span>true<span class="text-green-300">&lt;/em_dash_eradication_required&gt;</span>
-    <span class="text-green-300">&lt;location_cluster_overlap_mitigation&gt;</span>true<span class="text-green-300">&lt;/location_cluster_overlap_mitigation&gt;</span>
-  <span class="text-purple-400">&lt;/deterministic_flags&gt;</span>
-  <span class="text-slate-400">&lt;!-- CDATA encapsulation safely transfers structural edits across the pipeline --&gt;</span>
-<span class="text-blue-400">&lt;/handoff_payload&gt;</span></code></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TECHNICAL SEO & GEO SECTION -->
-        <section id="technical-seo" class="py-16 md:py-24 bg-white border-b border-slate-200 relative">
-            <div class="max-w-6xl mx-auto px-6 relative z-10">
-                <div class="text-center mb-16 flex flex-col items-center">
-                    <div class="mb-4 block w-full">
-                        <span class="text-indigo-600 font-bold tracking-widest text-xs uppercase bg-indigo-50 border border-indigo-200 px-3 py-1 rounded-full inline-block">SEMrush Certified (July 2026)</span>
-                    </div>
-                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-slate-900 mb-6 section-heading">Generative Engine Optimization (GEO) & Technical SEO</h2>
-                    <p class="max-w-3xl mx-auto text-slate-600 text-sm md:text-lg leading-relaxed">
-                        Holding current 2026 certifications from <strong>SEMrush in AI Search Essentials, Local SEO, and Agency Operations</strong>, I deploy deep structural SEO protocols that feed conflict-free data to Google's Knowledge Graph, defend against algorithmic penalties, and capture citations in AI Answer Engines (ChatGPT, Perplexity, Gemini).
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <!-- Entity Schema -->
-                    <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm card-hover transition-all">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="text-2xl">🕸️</span>
-                            <h3 class="font-heading text-xl font-bold text-slate-900">Entity & <code>@graph</code> Schema Protocols</h3>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4">
-                            I engineer unified <em>Global Power Blocks</em> in site headers utilizing JSON-LD <code>@graph</code> arrays, switching localized pages to <em>Lean Page Routing</em> via <code>@id</code> references. This eradicated duplicate entity generation for enterprise multi-location clients, driving a 156% non-branded impression lift.
-                        </p>
-                    </div>
-
-                    <!-- GEO Answers -->
-                    <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm card-hover transition-all">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="text-2xl">🤖</span>
-                            <h3 class="font-heading text-xl font-bold text-slate-900">GEO & Atomic Answers</h3>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4">
-                            As search transitions to AI citations, standard SEO fails. I construct pages featuring structurally dense, 40-to-60 word "Atomic Answers" placed strategically beneath H-tags using explicit noun tracking to force Knowledge Graph parsing and secure AI overview citations.
-                        </p>
-                    </div>
-                    
-                    <!-- Local SEO -->
-                    <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm card-hover transition-all">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="text-2xl">📍</span>
-                            <h3 class="font-heading text-xl font-bold text-slate-900">Local SEO & GBP Domination</h3>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4">
-                            Extensive execution of Local SEO mapping, building 1:1 relationships between physical service areas and digital entities. I automate the programmatic syndication of GBP products, category alignments, and geo-targeted service descriptions via my custom Claude GBP Suite.
-                        </p>
-                    </div>
-
-                    <!-- Technical Tracking -->
-                    <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm card-hover transition-all">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="text-2xl">🛡️</span>
-                            <h3 class="font-heading text-xl font-bold text-slate-900">SpamBrain & Canonical Defense</h3>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4">
-                            Engineered strict mathematical anchor text matrices to defeat Google's SpamBrain link devaluation penalties. I route ScreamingFrog and GSC API crawl data through custom Python scripts to autonomously govern canonical architectures and orphan page detection.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PAID ADS & REVENUE SECTION -->
-        <section id="paid-ads" class="py-16 md:py-24 bg-slate-50 border-b border-slate-200 relative">
-            <div class="max-w-5xl mx-auto px-6">
-                <div class="text-center mb-16 flex flex-col items-center">
-                    <div class="mb-4 block w-full">
-                        <span class="text-green-600 font-bold tracking-widest text-xs uppercase bg-green-100 border border-green-200 px-3 py-1 rounded-full inline-block">Growth & Acquisition Strategy</span>
-                    </div>
-                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-slate-900 section-heading w-max">Performance Marketing & ROAS</h2>
-                    <p class="max-w-2xl mx-auto text-slate-600 mb-12 text-sm md:text-lg">
-                        Traffic and AI pipelines are useless if they do not drive revenue. As a creative strategist for major agencies, I connect backend automation with front-end conversion psychology to scale highly profitable campaigns.
-                    </p>
-                </div>
-
-                <div class="bg-white border border-slate-200 p-8 md:p-10 rounded-2xl shadow-sm">
-                    <div class="grid md:grid-cols-2 gap-10 items-center">
-                        <div>
-                            <h3 class="font-heading text-2xl font-bold text-slate-900 mb-4">$500,000+ Ad Spend Managed</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                                I have successfully architected and scaled paid media campaigns processing over half a million dollars in ad spend, optimizing aggressively for Return on Ad Spend (ROAS) rather than vanity metrics.
-                            </p>
-                            <h4 class="font-bold text-slate-900 mb-3">Industry Vertical Expertise:</h4>
-                            <ul class="space-y-2 text-sm text-slate-600">
-                                <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Health & Wellness</li>
-                                <li class="flex items-center gap-2"><span class="text-green-500">✓</span> High-Ticket Supplements</li>
-                                <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Pet Care & Veterinary Solutions</li>
-                                <li class="flex items-center gap-2"><span class="text-green-500">✓</span> E-Commerce & Jewelry</li>
-                                <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Beauty & Cosmetics</li>
-                            </ul>
-                        </div>
-                        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center shadow-inner relative overflow-hidden">
-                            <div class="absolute -top-4 -right-4 bg-green-500 text-white font-bold py-1 px-8 rounded-full text-xs transform rotate-12 shadow-sm">Peak Performance</div>
-                            <div class="text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-500 to-emerald-800 mb-2 mt-4">6.0x</div>
-                            <div class="text-lg font-bold text-slate-800 tracking-wide uppercase">Return on Ad Spend</div>
-                            <p class="text-xs text-slate-500 mt-4 px-4 leading-relaxed">Achieved by aligning data-driven media buying with meticulously tested direct-response creative strategies.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- YMYL & E-E-A-T SECTION -->
-        <section id="ymyl" class="py-16 md:py-24 bg-slate-900 text-white border-y border-slate-800 relative overflow-hidden">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-600/5 rounded-full blur-[120px] pointer-events-none"></div>
-
-            <div class="max-w-5xl mx-auto px-6 relative z-10">
-                <div class="text-center mb-16 flex flex-col items-center">
-                    <div class="mb-4 block w-full">
-                        <span class="text-emerald-400 font-bold tracking-widest text-xs uppercase bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full inline-block">Entity Verification & Quality Assurance</span>
-                    </div>
-                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6 section-heading section-heading-dark w-max">Algorithmic Trust & E-E-A-T Strategy</h2>
-                    <p class="max-w-3xl mx-auto text-slate-400 text-sm md:text-lg leading-relaxed">
-                        Equipped with a rigorous analytical foundation, my clinical background as a licensed <strong>Doctor of Veterinary Medicine (DVM)</strong> serves as a profound structural SEO advantage. I understand how to build, verify, and leverage Author Entities to manipulate Google's Knowledge Graph in highly regulated YMYL (Your Money or Your Life) sectors.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8 mb-16">
-                    <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 shadow-sm">
-                        <h3 class="font-heading text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                            <span class="text-emerald-400">🛡️</span> Bypassing YMYL Filters
-                        </h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            In 2026, Google's algorithms and AI Overviews ruthlessly filter out content lacking verified trust signals. Having a verified medical degree allows me to engineer YMYL content strategies that achieve indexing and ranking velocity standard marketers cannot replicate.
-                        </p>
-                    </div>
-
-                    <div class="bg-slate-800/80 p-8 rounded-xl border border-slate-700 shadow-sm">
-                        <h3 class="font-heading text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                            <span class="text-indigo-400">⚕️</span> Clinical Quality Assurance
-                        </h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            I leverage my clinical background to write extensively for major online veterinary websites and to manage decentralized networks of writers, establishing rigorous SOPs that govern output quality and medical accuracy at scale.
-                        </p>
-                    </div>
-                </div>
-
-                <h4 class="text-center font-bold text-slate-300 mb-6 uppercase tracking-widest text-sm mt-12 border-t border-slate-800 pt-12">Clinical & Technical Credentials</h4>
-                <div class="grid md:grid-cols-3 gap-4 mb-12">
-                    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-sm text-center flex flex-col items-center justify-center">
-                        <div class="text-2xl mb-2">🎓</div>
-                        <h4 class="font-bold text-slate-200 text-sm mb-1">Doctor of Veterinary Medicine</h4>
-                        <p class="text-xs text-slate-400">DVM</p>
-                    </div>
-                    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-sm text-center flex flex-col items-center justify-center">
-                        <div class="text-2xl mb-2">🏅</div>
-                        <h4 class="font-bold text-slate-200 text-sm mb-1">SEMrush Certifications</h4>
-                        <p class="text-xs text-slate-400">SEO & AI Search (July 2026)</p>
-                    </div>
-                    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-sm text-center flex flex-col items-center justify-center">
-                        <div class="text-2xl mb-2">📈</div>
-                        <h4 class="font-bold text-slate-200 text-sm mb-1">Creative Ad Strategist</h4>
-                        <p class="text-xs text-slate-400">$500k+ Spend / 6.0x ROAS</p>
-                    </div>
-                </div>
-
-                <h4 class="text-center font-bold text-slate-300 mb-6 uppercase tracking-widest text-sm border-t border-slate-800 pt-12">Verified Knowledge Graph Entities</h4>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <a href="https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/" target="_blank" class="flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 card-hover transition-all shadow-sm">
-                        <span class="text-2xl mb-2">🐱</span>
-                        <span class="font-bold text-white text-sm">Catster</span>
-                        <span class="text-[10px] text-emerald-400 font-mono mt-1 uppercase tracking-wider">E-E-A-T Verified</span>
-                    </a>
-                    <a href="https://www.dogster.com/author/dr-luqman-javed" target="_blank" class="flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 card-hover transition-all shadow-sm">
-                        <span class="text-2xl mb-2">🐶</span>
-                        <span class="font-bold text-white text-sm">Dogster</span>
-                        <span class="text-[10px] text-emerald-400 font-mono mt-1 uppercase tracking-wider">E-E-A-T Verified</span>
-                    </a>
-                    <a href="https://articles.hepper.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank" class="flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 card-hover transition-all shadow-sm">
-                        <span class="text-2xl mb-2">🛋️</span>
-                        <span class="font-bold text-white text-sm">Hepper</span>
-                        <span class="text-[10px] text-emerald-400 font-mono mt-1 uppercase tracking-wider">E-E-A-T Verified</span>
-                    </a>
-                    <a href="https://thevetdesk.com/author/dr-luqman-javed-veterinarian-dvm/" target="_blank" class="flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 card-hover transition-all shadow-sm">
-                        <span class="text-2xl mb-2">⚕️</span>
-                        <span class="font-bold text-white text-sm">The Vet Desk</span>
-                        <span class="text-[10px] text-emerald-400 font-mono mt-1 uppercase tracking-wider">E-E-A-T Verified</span>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- FOOTER / PROOF OF CONCEPT -->
-        <section class="py-16 md:py-24 bg-white border-b border-slate-200">
-            <div class="max-w-4xl mx-auto px-6">
-                <div class="bg-amber-50 border border-amber-200 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden shadow-lg">
-                    <div class="relative z-10 flex flex-col items-center justify-center gap-6">
-                        <div class="text-center">
-                            <h3 class="font-heading text-2xl md:text-3xl font-bold text-slate-900 mb-3 flex items-center justify-center gap-2">
-                                <span>🔒</span> Enterprise NDAs & System Documentation
-                            </h3>
-                            <p class="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-4 mt-4">
-                                Due to strict NDAs, specific enterprise client data, live API keys, and active n8n webhooks cannot be shared publicly. 
-                            </p>
-                            <p class="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8 font-medium">
-                                However, my architectural logic and state-machine frameworks are thoroughly documented. Request a private walkthrough to discuss my workflows in detail, or download my executive resume for a high-level overview of my deployments and ROAS metrics.
-                            </p>
-                        </div>
-                        <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
-                            <a href="mailto:admin@luqmanjaved.com?subject=Requesting%20Private%20Walkthrough" class="whitespace-nowrap px-8 py-3 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold transition-all shadow-lg shadow-amber-600/25">
-                                Request Private Walkthrough
-                            </a>
-                            <a href="MASTER_CV_Luqman_Javed.docx.pdf" target="_blank" class="whitespace-nowrap px-8 py-3 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white font-bold transition-all shadow-sm flex items-center justify-center gap-2">
-                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M12 21l-8-9h6v-12h4v12h6l-8 9zm9-1v2h-18v-2h18z"/></svg>
-                                Download Executive CV
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-slate-50 py-10 border-t border-slate-200 text-center text-slate-500 text-sm">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col items-center gap-4">
-            <p class="font-heading text-lg font-bold text-slate-700">Luqman Javed</p>
-            <p>Senior AI Systems Architect | Growth Strategist | DVM</p>
-            <p class="mt-2">© 2026 Luqman Javed. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- App Logic -->
+    <script src="/views.js"></script>
+    <script src="/app.js"></script>
 </body>
 </html>
