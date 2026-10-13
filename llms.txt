@@ -1,0 +1,19 @@
+# Luqman Javed - Principal AI Systems Architect
+
+> Principal AI Systems Architect and Doctor of Veterinary Medicine (DVM) based in Porto, Portugal. Specializing in indestructible n8n Queue Mode workflow automation, Dead Letter Queue (DLQ) microservices, idempotent PostgreSQL state management, 5-phase RAG content ecosystems, and deterministic XML/JSON state-machine constraints for enterprise AI pipelines.
+
+## Architectural Capabilities
+
+- [Enterprise Automation Architecture](https://luqmanjaved.com/enterprise-automation): Deploying production-grade n8n architectures in Queue Mode via Docker Compose, utilizing Redis message brokers, stateless worker nodes, centralized Dead Letter Queues (DLQs), exponential backoff, and idempotent PostgreSQL transactions.
+- [AI Systems & FSM Architecture](https://luqmanjaved.com/ai-architecture): Engineering deterministic LLM handoffs and multi-agent workflows with Quickclaw, LangChain, strict JSON/XML schema validation, and Earley parser token masking to achieve 100% schema compliance.
+- [Generative Engine Optimization & RAG Ecosystems](https://luqmanjaved.com/geo-seo): Structuring 5-phase programmatic RAG pipelines (Pinecone/Qdrant), Atomic Answers, and unified @graph JSON-LD with DefinedTerm mappings to dominate AI Knowledge Graphs.
+- [YMYL Clinical Trust & Diagnostic Rigor](https://luqmanjaved.com/ymyl-trust): Applying verified DVM clinical diagnostic methodology to complex systems debugging while cryptographically linking medical E-E-A-T authority via sameAs schema markup.
+- [Architectural Field Notes](https://luqmanjaved.com/field-notes): Technical post-mortems on webhook concurrency, Redis worker scaling, and deterministic state management.
+
+## Optional
+
+- [Upwork Consultation & Engineering Profile](https://www.upwork.com/freelancers/~018ea1439c9499bc24): Enterprise AI automation audits, production-grade n8n workflow deployments, and custom RAG pipeline engineering.
+- [LinkedIn Professional Dossier](https://www.linkedin.com/in/luqman-javed): Verified professional history, academic DVM credentials, and systems architecture documentation.
+- [Catster Clinical Author Profile](https://www.catster.com/author/dr-luqman-javed-dvm-veterinarian/): Verified veterinary medical publications establishing YMYL E-E-A-T entity trust.
+- [Dogster Clinical Author Profile](https://www.dogster.com/author/dr-luqman-javed): Peer-reviewed clinical veterinary articles linked to the primary Knowledge Graph entity.
+- [Hepper Veterinary Profile](https://articles.hepper.com/author/dr-luqman-javed-veterinarian-dvm/): Clinical diagnostics and veterinary medical authorship.
