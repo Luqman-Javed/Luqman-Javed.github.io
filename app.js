@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Define the Routing Table
     const routes = {
         '/': viewHome,
+        '/enterprise-automation': viewEnterpriseAutomation,
         '/ai-architecture': viewAIArchitecture,
         '/geo-seo': viewGEO,
         '/ymyl-trust': viewYMYL,
-        '/legacy-growth': viewLegacyGrowth,
         '/field-notes': viewFieldNotes
     };
 
@@ -23,8 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 3. Router Function
     const router = () => {
-        // Parse current path, default to '/' if not found in routes
-        const path = window.location.pathname;
+        // Parse current path, normalize trailing slash, default to '/' if not found in routes
+        let path = window.location.pathname;
+        if (path.length > 1 && path.endsWith('/')) {
+            path = path.slice(0, -1);
+        }
         const renderFunction = routes[path] || viewHome; 
         
         // Inject the returned HTML string into the DOM
@@ -34,9 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 4. Intercept all internal link clicks for the SPA
     document.body.addEventListener("click", e => {
-        if (e.target.matches("[data-link]")) {
+        const link = e.target.closest("[data-link]");
+        if (link) {
             e.preventDefault();
-            const href = e.target.getAttribute("href");
+            const href = link.getAttribute("href");
             // Update history and trigger routing
             window.history.pushState(null, null, href);
             router();
