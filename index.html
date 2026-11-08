@@ -12,10 +12,10 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .font-mono { font-family: 'Fira Code', monospace; }
         ::-webkit-scrollbar { height: 8px; width: 8px; }
         ::-webkit-scrollbar-track { background: #0f172a; }
@@ -90,33 +90,35 @@
 
     <!-- Sticky Navigation Shell -->
     <header class="sticky top-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800/80">
-        <nav class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 text-emerald-400 font-mono font-bold text-base sm:text-lg tracking-tight hover:text-emerald-300 transition-colors" data-link>
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+            <a href="/" class="flex items-center gap-2.5 text-emerald-400 font-mono font-bold text-base sm:text-lg tracking-tight hover:text-emerald-300 transition-colors shrink-0 whitespace-nowrap" data-link>
                 <span>&lt;Lucky/&gt;</span>
-                <span class="hidden lg:inline-block text-xs font-sans font-normal text-slate-400 border-l border-slate-800 pl-2">Dr. Luqman Javed, DVM</span>
+                <span class="hidden xl:inline-block text-xs font-sans font-medium text-slate-400 border-l border-slate-800 pl-2.5 whitespace-nowrap">Dr. Luqman Javed, DVM</span>
             </a>
-            <div class="hidden md:flex items-center gap-5 lg:gap-7 text-sm font-medium text-slate-300">
-                <a href="/" class="hover:text-emerald-400 transition-colors" data-link>Overview</a>
-                <a href="/ai-systems" class="hover:text-emerald-400 transition-colors" data-link>AI Systems</a>
-                <a href="/seo-geo" class="hover:text-emerald-400 transition-colors" data-link>SEO &amp; GEO</a>
-                <a href="/creative-strategy" class="hover:text-emerald-400 transition-colors" data-link>Creative Strategy</a>
-                <a href="/vet-authorship" class="hover:text-emerald-400 transition-colors" data-link>Vet &amp; Nutrition</a>
-                <a href="/blog" class="hover:text-emerald-400 transition-colors" data-link>Blog</a>
+            <div class="hidden md:flex items-center gap-4 lg:gap-6 text-sm font-medium text-slate-300 shrink-0">
+                <a href="/" class="hover:text-emerald-400 transition-colors whitespace-nowrap" data-link>Overview</a>
+                <a href="/ai-systems" class="hover:text-emerald-400 transition-colors whitespace-nowrap" data-link>AI Systems</a>
+                <a href="/seo-geo" class="hover:text-emerald-400 transition-colors whitespace-nowrap" data-link>SEO &amp; GEO</a>
+                <a href="/creative-strategy" class="hover:text-emerald-400 transition-colors whitespace-nowrap" data-link>Creative Strategy</a>
+                <a href="/vet-authorship" class="hover:text-emerald-400 transition-colors whitespace-nowrap" data-link>Vet &amp; Nutrition</a>
+                <a href="/blog" class="hover:text-emerald-400 transition-colors whitespace-nowrap" data-link>Blog</a>
             </div>
-            <div class="flex items-center gap-2.5">
-                <a href="https://www.linkedin.com/in/luqman-javed" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-block text-xs font-mono text-slate-400 hover:text-white transition-colors px-2 py-1">
-                    LinkedIn ↗
+            <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+                <a href="https://www.linkedin.com/in/luqman-javed" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 text-xs font-mono text-slate-400 hover:text-white transition-colors px-2 py-1.5 whitespace-nowrap">
+                    <span>LinkedIn</span>
+                    <span>↗</span>
                 </a>
-                <a href="https://www.upwork.com/freelancers/~018ea1439c9499bc24" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-block px-3 py-1.5 bg-slate-900 text-amber-400 border border-amber-500/30 rounded-md text-xs font-mono hover:bg-amber-500/10 transition-colors">
-                    Upwork ↗
+                <a href="https://www.upwork.com/freelancers/~018ea1439c9499bc24" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 bg-slate-900 text-amber-400 border border-amber-500/30 rounded-md text-xs font-mono hover:bg-amber-500/10 transition-colors whitespace-nowrap">
+                    <span>Upwork</span>
+                    <span>↗</span>
                 </a>
-                <a href="/contact" data-link class="px-3.5 py-1.5 bg-emerald-500 text-slate-950 font-semibold rounded-md text-xs sm:text-sm font-mono hover:bg-emerald-400 transition-colors">
+                <a href="/contact" data-link class="inline-flex items-center justify-center px-3.5 py-1.5 bg-emerald-500 text-slate-950 font-semibold rounded-md text-xs sm:text-sm font-mono hover:bg-emerald-400 transition-colors whitespace-nowrap">
                     Contact Me
                 </a>
             </div>
         </nav>
         <!-- Mobile Navigation Bar -->
-        <div class="md:hidden flex items-center justify-start gap-1 border-t border-slate-800/80 bg-slate-950 px-3 py-2 text-xs font-mono text-slate-300 overflow-x-auto">
+        <div class="md:hidden flex items-center justify-start gap-1.5 border-t border-slate-800/80 bg-slate-950 px-3 py-2 text-xs font-mono text-slate-300 overflow-x-auto">
             <a href="/" class="hover:text-emerald-400 px-2.5 py-1 rounded bg-slate-900/60 whitespace-nowrap" data-link>Overview</a>
             <a href="/ai-systems" class="hover:text-emerald-400 px-2.5 py-1 rounded bg-slate-900/60 whitespace-nowrap" data-link>AI Systems</a>
             <a href="/seo-geo" class="hover:text-emerald-400 px-2.5 py-1 rounded bg-slate-900/60 whitespace-nowrap" data-link>SEO &amp; GEO</a>
@@ -132,19 +134,19 @@
 
     <!-- Standard Footer -->
     <footer class="border-t border-slate-800/80 bg-slate-950 py-10 text-slate-400 text-sm mt-auto">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
                 <p class="text-white font-semibold mb-1">Dr. Luqman "Lucky" Javed, DVM</p>
                 <p class="text-xs text-slate-400">AI Systems Architect • Technical &amp; Local SEO • Creative Strategist • Veterinarian</p>
             </div>
             <div class="flex flex-wrap items-center justify-center gap-5 font-mono text-xs">
-                <a href="/contact" data-link class="text-slate-300 hover:text-emerald-400 transition-colors">Contact</a>
-                <a href="mailto:admin@luqmanjaved.com" class="text-slate-300 hover:text-emerald-400 transition-colors">admin@luqmanjaved.com</a>
-                <a href="https://www.linkedin.com/in/luqman-javed" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-emerald-400 transition-colors">LinkedIn</a>
-                <a href="https://www.upwork.com/freelancers/~018ea1439c9499bc24" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-amber-400 transition-colors">Upwork</a>
-                <a href="/llms.txt" target="_blank" class="text-slate-400 hover:text-sky-400 transition-colors">llms.txt</a>
+                <a href="/contact" data-link class="text-slate-300 hover:text-emerald-400 transition-colors whitespace-nowrap">Contact</a>
+                <a href="mailto:admin@luqmanjaved.com" class="text-slate-300 hover:text-emerald-400 transition-colors whitespace-nowrap">admin@luqmanjaved.com</a>
+                <a href="https://www.linkedin.com/in/luqman-javed" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-emerald-400 transition-colors whitespace-nowrap">LinkedIn</a>
+                <a href="https://www.upwork.com/freelancers/~018ea1439c9499bc24" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-amber-400 transition-colors whitespace-nowrap">Upwork</a>
+                <a href="/llms.txt" target="_blank" class="text-slate-400 hover:text-sky-400 transition-colors whitespace-nowrap">llms.txt</a>
             </div>
-            <div class="flex items-center gap-2 text-xs text-slate-400">
+            <div class="flex items-center gap-2 text-xs text-slate-400 whitespace-nowrap">
                 <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                 <span>Porto, Portugal • Working Globally</span>
             </div>
