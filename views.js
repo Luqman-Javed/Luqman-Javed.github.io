@@ -601,7 +601,6 @@ const viewCreativeStrategy = () => `
                 </div>
                 <video controls preload="metadata" class="w-full h-72 object-contain bg-black">
                     <source src="/0426.mp4" type="video/mp4">
-                    <source src="/0426.mp4" type="video/quicktime">
                     Your browser does not support the video tag.
                 </video>
                 <div class="p-5">
